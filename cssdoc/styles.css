@@ -466,13 +466,14 @@ h5 {
 #work-experience {
     padding: 50px 0;
     text-align: center;
+    color: white; /* Makes all text white */
 }
 
 #work-experience h1 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 40px;
-    color: #007bff;
+    color: white; /* Title color same as "Aaryan" */
 }
 
 #work-experience .row {
@@ -484,13 +485,13 @@ h5 {
 
 #work-experience h2 {
     font-size: 22px;
-    color: #333;
     font-weight: bold;
+    color: white; /* Job titles white */
 }
 
 #work-experience p {
     font-size: 18px;
-    color: #666;
+    color: white; /* Dates and positions white */
 }
 
 /* Aligns left and right text properly */
@@ -509,4 +510,40 @@ h5 {
 /* ===== EDUCATION ===== */
 #education {
     padding: 50px 0;
+    text-align: center;
+    background-color: #161616; /* Matches your dark background */
+    color: white; /* Makes all text white */
+}
+
+#education h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white; /* Title color same as "Aaryan" */
+}
+
+#education .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#education .col-lg-4 {
+    padding: 20px;
+    border-right: 2px solid #444; /* Slight border for separation */
+}
+
+#education .col-lg-4:last-child {
+    border-right: none;
+}
+
+#education h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white; /* Institution names white */
+}
+
+#education p {
+    font-size: 18px;
+    color: white; /* Degree and dates white */
 }
