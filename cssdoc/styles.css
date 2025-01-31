@@ -486,12 +486,12 @@ h5 {
 #work-experience h2 {
     font-size: 22px;
     font-weight: bold;
-    color: white; /* Job titles white */
+    color: #bbbbbb; /* Job titles white */
 }
 
 #work-experience p {
     font-size: 18px;
-    color: white; /* Dates and positions white */
+    color: #bbbbbb; /* Dates and positions white */
 }
 
 /* Aligns left and right text properly */
@@ -540,12 +540,12 @@ h5 {
 #education h2 {
     font-size: 22px;
     font-weight: bold;
-    color: white; /* Institution names white */
+    color: #bbbbbb; /* Institution names white */
 }
 
 #education p {
     font-size: 18px;
-    color: white; /* Degree and dates white */
+    color: #bbbbbb; /* Degree and dates white */
 }
 
 /* ===== WORK EXPERIENCE IMAGES ===== */
