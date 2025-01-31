@@ -526,11 +526,13 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #education .col-lg-4 {
     padding: 20px;
     border-right: 2px solid #444; /* Slight border for separation */
+    flex: 1 1 300px;
 }
 
 #education .col-lg-4:last-child {
