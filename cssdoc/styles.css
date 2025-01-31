@@ -547,23 +547,25 @@ h5 {
     font-size: 18px;
     color: white; /* Degree and dates white */
 }
-/* ===== WORK EXPERIENCE IMAGES ===== */
-.work-img {
-    width: 120px;  /* Set a fixed width */
-    height: 120px; /* Set a fixed height */
-    object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
-    border-radius: 10px;
+/* ===== COMMON IMAGE STYLES ===== */
+.img-fluid {
+    width: 100px;  /* Set a uniform width */
+    height: 100px; /* Set a uniform height */
+    object-fit: contain; /* Ensures full image is visible without cutting */
     display: block;
     margin: auto;
 }
 
-/* ===== EDUCATION IMAGES ===== */
-.edu-img {
-    width: 120px;  /* Same size as Work Experience images */
-    height: 120px; 
-    object-fit: cover; /* Keeps images uniform without distortion */
-    border-radius: 10px;
-    display: block;
-    margin: 10px auto;
+/* ===== WORK EXPERIENCE SECTION ===== */
+#work-experience .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* ===== EDUCATION SECTION ===== */
+#education .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
