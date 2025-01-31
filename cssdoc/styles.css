@@ -547,3 +547,23 @@ h5 {
     font-size: 18px;
     color: white; /* Degree and dates white */
 }
+/* ===== WORK EXPERIENCE IMAGES ===== */
+.work-img {
+    width: 120px;  /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* ===== EDUCATION IMAGES ===== */
+.edu-img {
+    width: 120px;  /* Same size as Work Experience images */
+    height: 120px; 
+    object-fit: cover; /* Keeps images uniform without distortion */
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
+
