@@ -461,3 +461,52 @@ h5 {
         display: none;
     }
 }
+
+/* ===== WORK EXPERIENCE ===== */
+#work-experience {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#work-experience h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #007bff;
+}
+
+#work-experience .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#work-experience h2 {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+#work-experience p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Aligns left and right text properly */
+#work-experience .col-lg-6 {
+    padding: 20px;
+}
+
+#work-experience .text-end {
+    text-align: right;
+}
+
+#work-experience .text-start {
+    text-align: left;
+}
+
+/* ===== EDUCATION ===== */
+#education {
+    padding: 50px 0;
+}
