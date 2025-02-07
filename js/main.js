@@ -18,6 +18,10 @@ const observer2 = new IntersectionObserver(entries => {
         tng.classList.add('animate-container');
         return;
       }
+  function myFunction() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("page-content").style.display = "block";
+}
       tng.classList.remove('animate-container');
 
     });
