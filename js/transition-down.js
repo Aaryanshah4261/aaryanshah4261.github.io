@@ -11,13 +11,12 @@ function showPage() {
 
 // JavaScript to handle modal popup
 function openModal(projectId) {
-  document.getElementById(projectId + '-modal').style.display = "block";
+    document.getElementById(projectId + '-modal').style.display = "block";
 }
 
 function closeModal(projectId) {
-  document.getElementById(projectId + '-modal').style.display = "none";
+    document.getElementById(projectId + '-modal').style.display = "none";
 }
-
 // Close the modal when the user clicks anywhere outside of it
 window.onclick = function(event) {
   const modals = document.getElementsByClassName('modal');
