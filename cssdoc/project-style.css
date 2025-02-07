@@ -268,13 +268,13 @@ hr {
     .like-button {
         left:35%;
     }
-    /* Projects */
+    /* Projects 
     .myprojects-box {
         padding: 0px 25px 100px;
     }
     .section {
         margin-top: 30px;
-    }
+    }*/
 
     /* Achievement */
     #certificates {
@@ -361,4 +361,19 @@ hr {
   width: 100px;
   height: auto;
   margin: 10px;
+}
+
+/* Project Container Styles */
+.project {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
