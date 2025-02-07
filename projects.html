@@ -22,7 +22,6 @@
 
     <script src="https://use.fontawesome.com/3a02512a44.js"></script>
 
-
     <!-- External-CSS -->
     <link rel="stylesheet" href="cssdoc/project-style.css">
     <link rel="icon" href="Images/Myphoto.png">
@@ -64,13 +63,12 @@
             </nav>
         </div>
 
-
         <div id="projects">
             <div class="like-button container-fluid">
                 <button id="like-btn" onclick="update()">
                     Like
                 </button>
-                    <p id="count"></p>
+                <p id="count"></p>
             </div>
             <h1>My Projects</h1>
             <div class="myprojects-box">
@@ -82,7 +80,7 @@
                 <div id="project1-modal" class="modal">
                     <div class="modal-content">
                         <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Parametric Finite Element Wheelchair Model for Crash Simulations/h2>
+                        <h2>Parametric Finite Element Wheelchair Model for Crash Simulations</h2>
                         <div class="project-images">
                             <img src="image1.jpg" alt="Project Image 1">
                             <img src="image2.jpg" alt="Project Image 2">
@@ -93,10 +91,15 @@
                             – Currently working to automate the entire process of mesh morphing and scaling using MATLAB to streamline the workflow</p>
                     </div>
                 </div>
+                <!-- Repeat for other projects -->
+                <!-- Project 2 -->
+                <div class="project" onclick="openModal('project2')">
+                    <h3>Project 2</h3>
+                </div>
                 <div id="project2-modal" class="modal">
                     <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4/h2>
+                        <span class="close" onclick="closeModal('project2')">&times;</span>
+                        <h2>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h2>
                         <div class="project-images">
                             <img src="image1.jpg" alt="Project Image 1">
                             <img src="image2.jpg" alt="Project Image 2">
@@ -107,10 +110,14 @@
                             – After 50 simulation iterations, a final optimized design was selected, reducing the P-Joint value by 45.85%</p>
                     </div>
                 </div>
+                <!-- Project 3 -->
+                <div class="project" onclick="openModal('project3')">
+                    <h3>Project 3</h3>
+                </div>
                 <div id="project3-modal" class="modal">
                     <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Logistics Management Solution/h2>
+                        <span class="close" onclick="closeModal('project3')">&times;</span>
+                        <h2>Logistics Management Solution</h2>
                         <div class="project-images">
                             <img src="image1.jpg" alt="Project Image 1">
                             <img src="image2.jpg" alt="Project Image 2">
@@ -121,155 +128,13 @@
                             – After 50 simulation iterations, a final optimized design was selected, reducing the P-Joint value by 45.85%</p>
                     </div>
                 </div>
-                <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Route Simulation/h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>– This project aimed to reduce injury risks for a short, obese female occupant in vehicular impacts by optimizing safety equipment parameters.
-                            – A baseline frontal crash simulation was conducted in LS-Dyna and LS-Prepost using a Taguchi matrix to analyze injury metrics, with
-                            subsequent refinement of parameters based on initial iteration outcomes and engineering intuition.
-                            – After 50 simulation iterations, a final optimized design was selected, reducing the P-Joint value by 45.85%</p>
-                    </div>
-                </div>
-                <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload/h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed three iterations of an Electronic Power Conditioner (EPC) unit for microwave space payloads using Autodesk Inventor
-                            – Conducted comprehensive structural and thermal simulations, including modal, quasi-static, random response, steady-state, and transient
-                            thermal analyses, using Ansys Workbench to evaluate design performance under space conditions.
-                            – Performed DFMEA to identify potential failure modes in the EPC design, enabling proactive mitigation of structural and thermal risks.
-                            – Performed topology optimization to minimize material usage while maintaining structural integrity, resulting in reduction of weight by 47%.
-                            – Suggested and presented final design recommendations based on FEA results, improving thermal management and structural reliability.</p>
-                    </div>
-                </div>
-                <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Series Elastic Actuator/h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed and developed a Series Elastic Actuator for Humanoid Robot for space application with backdrivable torque of less than 2 nm</p>
-                    </div>
-                 </div>
-                 <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Robotic Gripper/h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Developed a robotic gripper using SolidWorks, 3D printing technology and arduino IDE, enhancing robotic manipulation capabilities</p>
-                    </div>
-                </div>
-                <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Cycloidal Drive/h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed a cycloidal drive with an 11:1 gear ratio using SolidWorks and manufactured it with 3D printing, optimizing mechanical 
-                            performance with using GD&T. Operated the motors of drive using Arduino IDE. Developed its layout for potential future manufacturing</p>
-                    </div>
-                </div>
-                <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Stress Analysis of Carbon Composite Material for Space-Based RF Components/h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>– Designed a carrier plate for microwave integrated circuits, incorporating Kover material using SolidWorks.
-                            – Conducted detailed modal, stress, and displacement analyses via Finite Element Method (FEM), assessing various lug constraints and
-                            including Carbon Fibre Reinforced Plastic (CFRP) materials in Solidworks Simulations.
-                            – Observed a reduction in stress by 85% and weight by 78% when using CFRP material, helping in material selection process</p>
-                    </div>
-                </div>
-                <!--<div class="row">
-                    <div class="col-lg-3 col-md-6 gy-2 gx-2">
-                        <div class="section sec-1">
-                            <h3>Digital Signature</h3>
-                            <div class="project-content">
-                                <p>
-                                    A digital signature is a mathematical scheme for verifying the authenticity of
-                                    digital
-                                    messages or documents.There are many other websites where digital signature is used
-                                    for
-                                    all transaction
-                                </p>
-                                <div class="project-link">
-                                    <a href="https://github.com/M0u1ea5/ReallifeProjects/tree/main/Reallife%20Projects/Digital%20Signature" target="_blank">Open up ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 gy-2 gx-2">
-                        <div class="section sec-2">
-                            <h3>Image to Text</h3>
-                            <div class="project-content">
-                                <p>
-                                    It is a program which is used to convert a pdf to a text format.
-                                    There is no need in manual operation.
-                                    It automatically recognizes the text and print in the screen
-                                </p>
-                                <div class="project-link">
-                                    <a href="https://github.com/M0u1ea5/ReallifeProjects/tree/main/Reallife%20Projects/Extracting%20Text" target="_blank">Open up ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 gy-2 gx-2">
-                        <div class="section sec-3">
-                            <h3>Quarantine-mate</h3>
-                            <div class="project-content">
-                                <p>
-                                    Qmate is an Android application which helps people who are having mild symptoms
-                                    of Covid 19.We can easy locate the nearby hospitals and also we can intake correct
-                                    food
-                                    using this app
-                                </p>
-                                <div class="project-link">
-                                    <a href="https://github.com/M0u1ea5/Q-mate/blob/main/app-release.apk" target="_blank">Open up ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 gy-2 gx-2">
-                        <div class="section sec-4">
-                            <h3>2-D Games</h3>
-                            <div class="project-content">
-                                <p>
-                                    This project is done for fun I have recreated my favourite games into 2D and also
-                                    I've
-                                    also made some games which is purely based my imagination
-                                </p>
-                                <div class="project-link">
-                                    <a href="https://github.com/M0u1ea5/Games" target="_blank">Open up ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
+                <!-- More projects... -->
             </div>
         </div>
 
         <hr><br>
 
-        <!-- Achivements -->
+        <!-- Achievements -->
         <div class="sec-title">
             <h1>Achievements</h1>
         </div>
@@ -338,7 +203,7 @@
                     <a href="mailto:aaryansh@umich.edu" target="_blank">
                         <i class="gmail pad-icon bi bi-envelope"></i>
                     </a>
-                    
+
                 </div>
                 <div class="resume-btn">
                     <a href="Aaryan Resume.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg">Resume</button>
@@ -348,7 +213,6 @@
         </div>
     </div>
 
-    
 
     <script src="js/transition-down.js"></script>
     <script src="js/like-btn.js"></script>
