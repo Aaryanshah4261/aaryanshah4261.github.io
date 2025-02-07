@@ -69,167 +69,69 @@
                 <p id="count"></p>
             </div>
             <h1>My Projects</h1>
-            <div class="myprojects-box">
-                <!-- Project Section -->
-                <div class="project" onclick="openModal('project1')">
-                    <h3>Parametric Finite Element Wheelchair Model for Crash Simulations</h3>
-                    <p>Developing a Parametric finite model for manual wheelchair, to allow the adjustment of critical design parameters to account for the size and
-                        shape variations among the wheelchair designs using Hypermesh.</p>
-                </div>
-                <!-- Modal Structure -->
-                <div id="project1-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Parametric Finite Element Wheelchair Model for Crash Simulations</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="project" onclick="openModal('project1')">
+                            <h3>Parametric Finite Element Wheelchair Model for Crash Simulations</h3>
+                            <ul>
+                                <li>Developing a Parametric finite model for manual wheelchair</li>
+                                <li>Allows adjustment of critical design parameters</li>
+                                <li>Using Hypermesh</li>
+                            </ul>
                         </div>
-                        <p>– At UMich Transportation Research Institute, under guidance of Prof. Jingwen Hu.
-                            – Developing a Parametric finite model for manual wheelchair, to allow the adjustment of critical design parameters to account for the size and
-                            shape variations among the wheelchair designs using Hypermesh.
-                            – Currently working to automate the entire process of mesh morphing and scaling using MATLAB to streamline the workflow</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project" onclick="openModal('project2')">
+                            <h3>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h3>
+                            <ul>
+                                <li>Aimed to reduce injury risks</li>
+                                <li>Optimizing safety equipment parameters</li>
+                                <li>Using LS-Dyna and LS-Prepost</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project" onclick="openModal('project3')">
+                            <h3>Logistics Management Solution</h3>
+                            <ul>
+                                <li>Owned product roadmap</li>
+                                <li>Driving product discovery/execution</li>
+                                <li>Integrated fragmented logistics management processes</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!-- Repeat for other projects -->
-                <!-- Project 2 -->
-                <div class="project" onclick="openModal('project2')">
-                    <h3>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h3>
-                    <p>This project aimed to reduce injury risks for a short, obese female occupant in vehicular impacts by optimizing safety equipment parameters.</p>
-                </div>
-                <div id="project2-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project2')">&times;</span>
-                        <h2>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="project" onclick="openModal('project4')">
+                            <h3>Route Simulation</h3>
+                            <ul>
+                                <li>Developed a route simulation and optimization model</li>
+                                <li>Using data analysis</li>
+                                <li>Enhancing business decision-making processes</li>
+                            </ul>
                         </div>
-                        <p>– This project aimed to reduce injury risks for a short, obese female occupant in vehicular impacts by optimizing safety equipment parameters.
-                            – A baseline frontal crash simulation was conducted in LS-Dyna and LS-Prepost using a Taguchi matrix to analyze injury metrics, with
-                            subsequent refinement of parameters based on initial iteration outcomes and engineering intuition.
-                            – After 50 simulation iterations, a final optimized design was selected, reducing the P-Joint value by 45.85%</p>
                     </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project" onclick="openModal('project3')">
-                    <h3>Logistics Management Solution</h3>
-                    <p>Owned product roadmap and driving product discovery/execution for Logistic Management Software; Integrated fragmented logistics management processes and tools across 10+ fu[...]
-                </div>
-                <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project3')">&times;</span>
-                        <h2>Logistics Management Solution</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
+                    <div class="col-md-4">
+                        <div class="project" onclick="openModal('project5')">
+                            <h3>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h3>
+                            <ul>
+                                <li>Designed three electronic power conditioner units</li>
+                                <li>Performed structural and thermal analysis</li>
+                                <li>Conducted topology optimization</li>
+                            </ul>
                         </div>
-                        <p>– Owned product roadmap and driving product discovery/execution for Logistic Management Software; Integrated fragmented logistics management processes and tools acros[...]
                     </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="project" onclick="openModal('project4')">
-                    <h3>Route Simulation</h3>
-                    <p>Developed a route simulation and optimization model using data analysis, enhancing business decision-making processes.</p>
-                </div>
-                <div id="project4-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project4')">&times;</span>
-                        <h2>Route Simulation</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
+                    <div class="col-md-4">
+                        <div class="project" onclick="openModal('project6')">
+                            <h3>Series Elastic Actuator</h3>
+                            <ul>
+                                <li>Designed and developed a Series Elastic Actuator</li>
+                                <li>For Humanoid Robot for space application</li>
+                                <li>With backdrivable torque of less than 2 nm</li>
+                            </ul>
                         </div>
-                        <p>– Developed a route simulation and optimization model using data analysis, enhancing business decision-making processes.</p>
-                    </div>
-                </div>
-                <!-- Project 5 -->
-                <div class="project" onclick="openModal('project5')">
-                    <h3>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h3>
-                    <p>Designed three electronic power conditioner units and performed structural analysis, thermal analysis and topology optimization.</p>
-                </div>
-                <div id="project5-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project5')">&times;</span>
-                        <h2>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed three iterations of an Electronic Power Conditioner (EPC) unit for microwave space payloads using Autodesk Inventor
-                            – Conducted comprehensive structural and thermal simulations, including modal, quasi-static, random response, steady-state, and transient
-                            thermal analyses, using Ansys Workbench to evaluate design performance under space conditions.
-                            – Performed DFMEA to identify potential failure modes in the EPC design, enabling proactive mitigation of structural and thermal risks.
-                            – Performed topology optimization to minimize material usage while maintaining structural integrity, resulting in reduction of weight by 47%.
-                            – Suggested and presented final design recommendations based on FEA results, improving thermal management and structural reliability.</p>
-                    </div>
-                </div>
-                <!-- Project 6 -->
-                <div class="project" onclick="openModal('project6')">
-                    <h3>Series Elastic Actuator</h3>
-                    <p>Designed and developed a Series Elastic Actuator for Humanoid Robot for space application with backdrivable torque of less than 2 nm.</p>
-                </div>
-                <div id="project6-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project6')">&times;</span>
-                        <h2>Series Elastic Actuator</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed and developed a Series Elastic Actuator for Humanoid Robot for space application with backdrivable torque of less than 2 nm.</p>
-                    </div>
-                </div>
-                <!-- Project 7 -->
-                <div class="project" onclick="openModal('project7')">
-                    <h3>Robotic Gripper</h3>
-                    <p>Developed a robotic gripper using SolidWorks, 3D printing technology, and Arduino IDE, enhancing robotic manipulation capabilities.</p>
-                </div>
-                <div id="project7-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project7')">&times;</span>
-                        <h2>Robotic Gripper</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Developed a robotic gripper using SolidWorks, 3D printing technology, and Arduino IDE, enhancing robotic manipulation capabilities.</p>
-                    </div>
-                </div>
-                <!-- Project 8 -->
-                <div class="project" onclick="openModal('project8')">
-                    <h3>Cycloidal Drive</h3>
-                    <p>Designed a cycloidal drive with an 11:1 gear ratio using SolidWorks and manufactured it with 3D printing.</p>
-                </div>
-                <div id="project8-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project8')">&times;</span>
-                        <h2>Cycloidal Drive</h3>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed a cycloidal drive with an 11:1 gear ratio using SolidWorks and manufactured it with 3D printing, optimizing mechanical
-                            performance using GD&T. Operated the motors of the drive using Arduino IDE. Developed its layout for potential future manufacturing.</p>
-                    </div>
-                </div>
-                <!-- Project 9 -->
-                <div class="project" onclick="openModal('project9')">
-                    <h3>Stress Analysis of Carbon Composite Material for Space-Based RF Components</h3>
-                    <p>– Designed a carrier plate for microwave integrated circuits, incorporating Kover material using SolidWorks.</p>
-                </div>
-                <div id="project9-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project9')">&times;</span>
-                        <h2>Stress Analysis of Carbon Composite Material for Space-Based RF Components</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p> – Designed a carrier plate for microwave integrated circuits, incorporating Kover material using SolidWorks.
-                            – Conducted detailed modal, stress, and displacement analyses via Finite Element Method (FEM), assessing various lug constraints and
-                            including Carbon Fibre Reinforced Plastic (CFRP) materials in Solidworks Simulations.
-                            – Observed a reduction in stress by 85% and weight by 78% when using CFRP material, helping in material selection process.</p>
                     </div>
                 </div>
             </div>
@@ -238,31 +140,27 @@
         <hr><br>
 
         <!-- Achievements -->
-       <!-- Achievements -->
         <div class="sec-title">
-    <h1>Achievements</h1>
-</div>
-<div id="certificates">
-    <div class="certificate-box">
-        <ul>
-            <li>
-                <p>Ranked as the top performer in the department for the 2019 batch.</p>
-            </li>
-            <li>
-                <p>I was selected as a visiting student in which only two students were selected from the GTU with an acceptance rate of 2%.</p>
-            </li>
-            <li>
-                <p>Ranked as the top performer in the department for the 2019 batch.</p>
-            </li>
-            <li>
-                <p>Presented and Published two research papers in the international conference.</p>
-            </li>
-            <li>
-                <p>Got spot recognition for outstanding performance for the project of Logistics Management Solution during tenure at Adani Green Energy Ltd. (2023-2024)</p>
-            </li>
-        </ul>
-    </div>
-</div>
+            <h1>Achievements</h1>
+        </div>
+        <div id="certificates">
+            <div class="certificate-box">
+                <ul>
+                    <li>
+                        <p>Got Certified SolidWorks Professional Certificate from Dassault Systèmes</p>
+                    </li>
+                    <li>
+                        <p>I was selected as a visiting student in which only two students were selected from the GTU with an acceptance rate of 2%.</p>
+                    </li>
+                    <li>
+                        <p>Presented and Published two research papers in the international conference.</p>
+                    </li>
+                    <li>
+                        <p>Got spot recognition for outstanding performance for the project of Logistics Management Solution during tenure at Adani Green Energy Ltd. (2023-2024)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div id="contact">
             <div class="container-fluid">
                 <h1>Get in touch</h1>
@@ -279,7 +177,6 @@
                     <a href="mailto:aaryansh@umich.edu" target="_blank">
                         <i class="gmail pad-icon bi bi-envelope"></i>
                     </a>
-
                 </div>
                 <div class="resume-btn">
                     <a href="Aaryan Resume.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg">Resume</button>
@@ -289,11 +186,119 @@
         </div>
     </div>
 
+    <!-- Modal Structure -->
+    <div id="project1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>Parametric Finite Element Wheelchair Model for Crash Simulations</h2>
+            <div class="project-images">
+                <img src="image1.jpg" alt="Project Image 1">
+                <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <ul>
+                <li>Developing a Parametric finite model for manual wheelchair</li>
+                <li>Allows adjustment of critical design parameters</li>
+                <li>Using Hypermesh</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Repeat for other projects -->
+    <div id="project2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h2>
+            <div class="project-images">
+                <img src="image1.jpg" alt="Project Image 1">
+                <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <ul>
+                <li>Aimed to reduce injury risks</li>
+                <li>Optimizing safety equipment parameters</li>
+                <li>Using LS-Dyna and LS-Prepost</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="project3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h2>Logistics Management Solution</h2>
+            <div class="project-images">
+                <img src="image1.jpg" alt="Project Image 1">
+                <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <ul>
+                <li>Owned product roadmap</li>
+                <li>Driving product discovery/execution</li>
+                <li>Integrated fragmented logistics management processes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="project4-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project4')">&times;</span>
+            <h2>Route Simulation</h2>
+            <div class="project-images">
+                <img src="image1.jpg" alt="Project Image 1">
+                <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <ul>
+                <li>Developed a route simulation and optimization model</li>
+                <li>Using data analysis</li>
+                <li>Enhancing business decision-making processes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="project5-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project5')">&times;</span>
+            <h2>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h2>
+            <div class="project-images">
+                <img src="image1.jpg" alt="Project Image 1">
+                <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <ul>
+                <li>Designed three electronic power conditioner units</li>
+                <li>Performed structural and thermal analysis</li>
+                <li>Conducted topology optimization</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="project6-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project6')">&times;</span>
+            <h2>Series Elastic Actuator</h2>
+            <div class="project-images">
+                <img src="image1.jpg" alt="Project Image 1">
+                <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <ul>
+                <li>Designed and developed a Series Elastic Actuator</li>
+                <li>For Humanoid Robot for space application</li>
+                <li>With backdrivable torque of less than 2 nm</li>
+            </ul>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
     <script src="js/transition-down.js"></script>
     <script src="js/like-btn.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId + '-modal').style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId + '-modal').style.display = 'none';
+        }
     </script>
 </body>
 </html>
