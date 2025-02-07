@@ -1,3 +1,9 @@
+// Function to hide the loader and show the page content
+function myFunction() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("page-content").style.display = "block";
+}
+
 const observer1 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
       const tng = entry.target.querySelector('.scroll-left')
@@ -18,10 +24,6 @@ const observer2 = new IntersectionObserver(entries => {
         tng.classList.add('animate-container');
         return;
       }
-  function myFunction() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("page-content").style.display = "block";
-}
       tng.classList.remove('animate-container');
 
     });
