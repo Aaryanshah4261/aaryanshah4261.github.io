@@ -43,13 +43,25 @@
             padding: 20px;
             margin-bottom: 20px;
             cursor: pointer;
-            position: relative;
         }
         .project:hover {
             background-color: #f1f1f1;
         }
         .project p {
             color: #555555;
+        }
+        .project-description {
+            display: none;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .project-description h2 {
+            color: #007bff;
+        }
+        .project-description ul li {
+            color: #555;
         }
         .sec-title h1 {
             color: #007bff;
@@ -70,21 +82,12 @@
         .copy-right {
             color: #555555;
         }
+        /* Custom styles for project headings and descriptions */
         .project h3 {
-            color: #ff5733;
+            color: #ff5733; /* Change this color to your desired heading color */
         }
         .project p {
-            color: #333333;
-        }
-        .project-details {
-            display: none;
-            background-color: #ffffff;
-            border: 1px solid #dddddd;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 20px auto;
-            width: 90%;
-            max-width: 1200px;
+            color: #333333; /* Change this color to your desired description color */
         }
     </style>
 </head>
@@ -133,7 +136,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="project" onclick="openProjectDetails('Parametric Finite Element Wheelchair Model for Crash Simulations', 'Developing a Parametric finite model for manual wheelchair|Allows adjustment of critical design parameters|Using Hypermesh')">
+                        <div class="project" onclick="toggleDescription(this)">
                             <h3>Parametric Finite Element Wheelchair Model for Crash Simulations</h3>
                             <div class="row">
                                 <div class="col-md-4">
@@ -146,13 +149,21 @@
                                     <p>Using Hypermesh</p>
                                 </div>
                             </div>
+                            <div class="project-description">
+                                <h2>Parametric Finite Element Wheelchair Model for Crash Simulations</h2>
+                                <ul>
+                                    <li>Developing a Parametric finite model for manual wheelchair</li>
+                                    <li>Allows adjustment of critical design parameters</li>
+                                    <li>Using Hypermesh</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Repeat for other projects -->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="project" onclick="openProjectDetails('Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4', 'Aimed to reduce injury risks|Optimizing safety equipment parameters|Using LS-Dyna and LS-Prepost')">
+                        <div class="project" onclick="toggleDescription(this)">
                             <h3>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h3>
                             <div class="row">
                                 <div class="col-md-4">
@@ -164,6 +175,14 @@
                                 <div class="col-md-4">
                                     <p>Using LS-Dyna and LS-Prepost</p>
                                 </div>
+                            </div>
+                            <div class="project-description">
+                                <h2>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h2>
+                                <ul>
+                                    <li>Aimed to reduce injury risks</li>
+                                    <li>Optimizing safety equipment parameters</li>
+                                    <li>Using LS-Dyna and LS-Prepost</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -221,23 +240,33 @@
         </div>
     </div>
 
-    <script>
-        function openProjectDetails(title, description) {
-            const projectDetails = document.createElement('div');
-            projectDetails.classList.add('project-details');
-            projectDetails.innerHTML = `
-                <h1>${title}</h1>
-                <ul>${description.split('|').map(item => `<li>${item}</li>`).join('')}</ul>
-            `;
-            document.body.innerHTML = '';
-            document.body.appendChild(projectDetails);
-        }
-    </script>
     <script src="js/main.js"></script>
     <script src="js/transition-down.js"></script>
     <script src="js/like-btn.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script>
+        document.addEventListener('click', function(event) {
+            var isClickInside = event.target.closest('.project');
+            if (!isClickInside) {
+                var descriptions = document.querySelectorAll('.project-description');
+                descriptions.forEach(function(desc) {
+                    desc.style.display = 'none';
+                });
+            }
+        });
+
+        function toggleDescription(element) {
+            var description = element.querySelector('.project-description');
+            var isVisible = description.style.display === 'block';
+            var allDescriptions = document.querySelectorAll('.project-description');
+            allDescriptions.forEach(function(desc) {
+                desc.style.display = 'none';
+            });
+            description.style.display = isVisible ? 'none' : 'block';
+        }
     </script>
 </body>
 </html>
