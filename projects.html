@@ -43,6 +43,7 @@
             padding: 20px;
             margin-bottom: 20px;
             cursor: pointer;
+            position: relative;
         }
         .project:hover {
             background-color: #f1f1f1;
@@ -52,10 +53,16 @@
         }
         .project-description {
             display: none;
-            background-color: #f8f9fa;
-            padding: 10px;
-            border: 1px solid #ddd;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(248, 249, 250, 0.95);
+            padding: 20px;
             border-radius: 5px;
+            overflow-y: auto;
+            z-index: 10;
         }
         .project-description h2 {
             color: #007bff;
