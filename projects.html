@@ -1,299 +1,570 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-    <!-- Google-Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Google-Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
 
-    <script src="https://use.fontawesome.com/3a02512a44.js"></script>
+  <script src="https://use.fontawesome.com/3a02512a44.js"></script>
 
-    <!-- External-CSS -->
-    <link rel="stylesheet" href="cssdoc/project-style.css">
-    <link rel="icon" href="Images/Myphoto.png">
+  <!-- External-CSS -->
+  <link rel="stylesheet" href="cssdoc/project-style.css">
+  <link rel="icon" href="Images/Myphoto.png">
 
-    <title>Aaryan's Portfolio</title>
+  <title>Aaryan's Portfolio</title>
+  
+  <style>
+    .container {
+      width: 80%;
+      margin: auto;
+      border: 1px solid #000;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .row:nth-child(odd) {
+      justify-content: space-around;
+    }
+    .box {
+      width: 30%;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    /* Modal styling */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      position: relative;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body onload="myFunction()">
-    <!-- Loading -->
-    <div id="loader"></div>
+  <!-- Loading -->
+  <div id="loader"></div>
 
-    <!-- NAVBAR -->
-    <div class="animate-bottom" id="page-content">
-        <div id="header">
-            <nav class="fixed-top navbar navbar-expand-lg navbar-light navbar-custom">
-                <div class="navigation-bar container container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <h2>Projects</h2>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav-ul navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-ele nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-ele nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  <!-- NAVBAR -->
+  <div class="animate-bottom" id="page-content">
+    <div id="header">
+      <nav class="fixed-top navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="navigation-bar container container-fluid">
+          <a class="navbar-brand" href="#">
+            <h2>Projects</h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav-ul navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-ele nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-ele nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div id="projects">
-            <div class="like-button container-fluid">
-                <button id="like-btn" onclick="update()">
-                    Like
-                </button>
-                <p id="count"></p>
-            </div>
-            <h1>My Projects</h1>
-            <div class="myprojects-box">
-                <!-- Project Section -->
-                <div class="project" onclick="openModal('project1')">
-                    <h3>Parametric Finite Element Wheelchair Model for Crash Simulations</h3>
-                    <p>Developing a Parametric finite model for manual wheelchair, to allow the adjustment of critical design parameters to account for the size and
-                        shape variations among the wheelchair designs using Hypermesh.</p>
-                </div>
-                <!-- Modal Structure -->
-                <div id="project1-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Parametric Finite Element Wheelchair Model for Crash Simulations</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>– At UMich Transportation Research Institute, under guidance of Prof. Jingwen Hu.
-                            – Developing a Parametric finite model for manual wheelchair, to allow the adjustment of critical design parameters to account for the size and
-                            shape variations among the wheelchair designs using Hypermesh.
-                            – Currently working to automate the entire process of mesh morphing and scaling using MATLAB to streamline the workflow</p>
-                    </div>
-                </div>
-                <!-- Repeat for other projects -->
-                <!-- Project 2 -->
-                <div class="project" onclick="openModal('project2')">
-                    <h3>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h3>
-                    <p>This project aimed to reduce injury risks for a short, obese female occupant in vehicular impacts by optimizing safety equipment parameters.</p>
-                </div>
-                <div id="project2-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project2')">&times;</span>
-                        <h2>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>– This project aimed to reduce injury risks for a short, obese female occupant in vehicular impacts by optimizing safety equipment parameters.
-                            – A baseline frontal crash simulation was conducted in LS-Dyna and LS-Prepost using a Taguchi matrix to analyze injury metrics, with
-                            subsequent refinement of parameters based on initial iteration outcomes and engineering intuition.
-                            – After 50 simulation iterations, a final optimized design was selected, reducing the P-Joint value by 45.85%</p>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project" onclick="openModal('project3')">
-                    <h3>Logistics Management Solution</h3>
-                    <p>Owned product roadmap and driving product discovery/execution for Logistic Management Software; Integrated fragmented logistics management processes and tools across 10+ fu[...]
-                </div>
-                <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project3')">&times;</span>
-                        <h2>Logistics Management Solution</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>– Owned product roadmap and driving product discovery/execution for Logistic Management Software; Integrated fragmented logistics management processes and tools acros[...]
-                    </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="project" onclick="openModal('project4')">
-                    <h3>Route Simulation</h3>
-                    <p>Developed a route simulation and optimization model using data analysis, enhancing business decision-making processes.</p>
-                </div>
-                <div id="project4-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project4')">&times;</span>
-                        <h2>Route Simulation</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>– Developed a route simulation and optimization model using data analysis, enhancing business decision-making processes.</p>
-                    </div>
-                </div>
-                <!-- Project 5 -->
-                <div class="project" onclick="openModal('project5')">
-                    <h3>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h3>
-                    <p>Designed three electronic power conditioner units and performed structural analysis, thermal analysis and topology optimization.</p>
-                </div>
-                <div id="project5-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project5')">&times;</span>
-                        <h2>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed three iterations of an Electronic Power Conditioner (EPC) unit for microwave space payloads using Autodesk Inventor
-                            – Conducted comprehensive structural and thermal simulations, including modal, quasi-static, random response, steady-state, and transient
-                            thermal analyses, using Ansys Workbench to evaluate design performance under space conditions.
-                            – Performed DFMEA to identify potential failure modes in the EPC design, enabling proactive mitigation of structural and thermal risks.
-                            – Performed topology optimization to minimize material usage while maintaining structural integrity, resulting in reduction of weight by 47%.
-                            – Suggested and presented final design recommendations based on FEA results, improving thermal management and structural reliability.</p>
-                    </div>
-                </div>
-                <!-- Project 6 -->
-                <div class="project" onclick="openModal('project6')">
-                    <h3>Series Elastic Actuator</h3>
-                    <p>Designed and developed a Series Elastic Actuator for Humanoid Robot for space application with backdrivable torque of less than 2 nm.</p>
-                </div>
-                <div id="project6-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project6')">&times;</span>
-                        <h2>Series Elastic Actuator</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed and developed a Series Elastic Actuator for Humanoid Robot for space application with backdrivable torque of less than 2 nm.</p>
-                    </div>
-                </div>
-                <!-- Project 7 -->
-                <div class="project" onclick="openModal('project7')">
-                    <h3>Robotic Gripper</h3>
-                    <p>Developed a robotic gripper using SolidWorks, 3D printing technology, and Arduino IDE, enhancing robotic manipulation capabilities.</p>
-                </div>
-                <div id="project7-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project7')">&times;</span>
-                        <h2>Robotic Gripper</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Developed a robotic gripper using SolidWorks, 3D printing technology, and Arduino IDE, enhancing robotic manipulation capabilities.</p>
-                    </div>
-                </div>
-                <!-- Project 8 -->
-                <div class="project" onclick="openModal('project8')">
-                    <h3>Cycloidal Drive</h3>
-                    <p>Designed a cycloidal drive with an 11:1 gear ratio using SolidWorks and manufactured it with 3D printing.</p>
-                </div>
-                <div id="project8-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project8')">&times;</span>
-                        <h2>Cycloidal Drive</h3>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p>Designed a cycloidal drive with an 11:1 gear ratio using SolidWorks and manufactured it with 3D printing, optimizing mechanical
-                            performance using GD&T. Operated the motors of the drive using Arduino IDE. Developed its layout for potential future manufacturing.</p>
-                    </div>
-                </div>
-                <!-- Project 9 -->
-                <div class="project" onclick="openModal('project9')">
-                    <h3>Stress Analysis of Carbon Composite Material for Space-Based RF Components</h3>
-                    <p>– Designed a carrier plate for microwave integrated circuits, incorporating Kover material using SolidWorks.</p>
-                </div>
-                <div id="project9-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project9')">&times;</span>
-                        <h2>Stress Analysis of Carbon Composite Material for Space-Based RF Components</h2>
-                        <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>
-                        <p> – Designed a carrier plate for microwave integrated circuits, incorporating Kover material using SolidWorks.
-                            – Conducted detailed modal, stress, and displacement analyses via Finite Element Method (FEM), assessing various lug constraints and
-                            including Carbon Fibre Reinforced Plastic (CFRP) materials in Solidworks Simulations.
-                            – Observed a reduction in stress by 85% and weight by 78% when using CFRP material, helping in material selection process.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr><br>
-
-        <!-- Achievements -->
-       <!-- Achievements -->
-        <div class="sec-title">
-    <h1>Achievements</h1>
-</div>
-<div id="certificates">
-    <div class="certificate-box">
-        <ul>
-            <li>
-                <p>Ranked as the top performer in the department for the 2019 batch.</p>
-            </li>
-            <li>
-                <p>I was selected as a visiting student in which only two students were selected from the GTU with an acceptance rate of 2%.</p>
-            </li>
-            <li>
-                <p>Ranked as the top performer in the department for the 2019 batch.</p>
-            </li>
-            <li>
-                <p>Presented and Published two research papers in the international conference.</p>
-            </li>
-            <li>
-                <p>Got spot recognition for outstanding performance for the project of Logistics Management Solution during tenure at Adani Green Energy Ltd. (2023-2024)</p>
-            </li>
-        </ul>
-    </div>
-</div>
-        <div id="contact">
-            <div class="container-fluid">
-                <h1>Get in touch</h1>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/aaryanshah4261/" target="_blank">
-                        <i class="linkedin bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/aaryannsh_/" target="_blank">
-                        <i class="instagram pad-icon bi bi-instagram"></i>
-                    </a>
-                    <a href="https://github.com/Mouleas" target="_blank">
-                        <i class="github pad-icon bi bi-github"></i>
-                    </a>
-                    <a href="mailto:aaryansh@umich.edu" target="_blank">
-                        <i class="gmail pad-icon bi bi-envelope"></i>
-                    </a>
-
-                </div>
-                <div class="resume-btn">
-                    <a href="Aaryan Resume.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg">Resume</button>
-                </div>
-                <h3 class="copy-right">© 2025 Aaryan</h3>
-            </div>
-        </div>
+      </nav>
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/transition-down.js"></script>
-    <script src="js/like-btn.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+    <div id="projects">
+      <div class="like-button container-fluid">
+        <button id="like-btn" onclick="update()">
+          Like
+        </button>
+        <p id="count"></p>
+      </div>
+      <h1>My Projects</h1>
+      <div class="myprojects-box">
+        <!-- Project 1 -->
+        <div class="project" onclick="openModal('project1')">
+          <h3>Parametric Finite Element Wheelchair Model for Crash Simulations</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Developing a Parametric finite model for manual wheelchair</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Adjustment of critical design parameters</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Shape variations among the wheelchair designs using Hypermesh</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Automating the entire process of mesh morphing</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Scaling using MATLAB to streamline the workflow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 1 -->
+        <div id="project1-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>Parametric Finite Element Wheelchair Model for Crash Simulations</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              – At UMich Transportation Research Institute, under guidance of Prof. Jingwen Hu.<br>
+              – Developing a Parametric finite model for manual wheelchair to allow adjustment of critical design parameters accounting for size and shape variations using Hypermesh.<br>
+              – Currently working to automate mesh morphing and scaling using MATLAB to streamline the workflow.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project" onclick="openModal('project2')">
+          <h3>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Reduce injury risks for a short, obese female occupant</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Optimizing safety equipment parameters</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Baseline frontal crash simulation in LS-Dyna</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Analyzing injury metrics with Taguchi matrix</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Refinement of parameters from initial iterations</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Final optimized design selected after 50 iterations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 2 -->
+        <div id="project2-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              – This project aimed to reduce injury risks for a short, obese female occupant by optimizing safety equipment parameters.<br>
+              – Baseline frontal crash simulation conducted in LS-Dyna and LS-Prepost with a Taguchi matrix to analyze injury metrics.<br>
+              – Final design selected after 50 simulation iterations, reducing the P-Joint value by 45.85%.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project" onclick="openModal('project3')">
+          <h3>Logistics Management Solution</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Owned product roadmap and discovery/execution</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Integrated fragmented logistics management processes</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Implemented tools across multiple functions</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Enhanced operational efficiency</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Improved decision-making capabilities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 3 -->
+        <div id="project3-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h2>Logistics Management Solution</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              – Owned product roadmap and drove product discovery/execution for a Logistics Management Software.<br>
+              – Integrated fragmented processes and tools across multiple functions to enhance operational efficiency and decision-making.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project" onclick="openModal('project4')">
+          <h3>Route Simulation</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Developed a route simulation model</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Optimized routes for efficiency</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Enhanced business decision-making processes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 4 -->
+        <div id="project4-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project4')">&times;</span>
+            <h2>Route Simulation</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              – Developed a route simulation and optimization model using data analysis, enhancing business decision-making processes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project" onclick="openModal('project5')">
+          <h3>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Designed three electronic power conditioner units</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Performed structural analysis</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Conducted thermal analysis</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Topology optimization for weight reduction</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Improved thermal management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 5 -->
+        <div id="project5-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project5')">&times;</span>
+            <h2>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              – Designed three iterations of an EPC unit for microwave space payloads using Autodesk Inventor.<br>
+              – Conducted comprehensive structural and thermal simulations (modal, quasi-static, random response, steady-state, and transient analyses) using Ansys Workbench.<br>
+              – Performed DFMEA to identify potential failure modes, mitigating structural and thermal risks.<br>
+              – Executed topology optimization to reduce weight by 47% while maintaining integrity.<br>
+              – Presented final design recommendations based on FEA outcomes for improved thermal management and structural reliability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project" onclick="openModal('project6')">
+          <h3>Series Elastic Actuator</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Designed and developed a Series Elastic Actuator</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>For Humanoid Robot for space application</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Backdrivable torque of less than 2 nm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 6 -->
+        <div id="project6-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project6')">&times;</span>
+            <h2>Series Elastic Actuator</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              Designed and developed a Series Elastic Actuator for a Humanoid Robot for space application with a backdrivable torque of less than 2 nm.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project" onclick="openModal('project7')">
+          <h3>Robotic Gripper</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Developed a robotic gripper using SolidWorks</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>3D printing technology</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Arduino IDE</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 7 -->
+        <div id="project7-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project7')">&times;</span>
+            <h2>Robotic Gripper</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              Developed a robotic gripper using SolidWorks, 3D printing technology, and Arduino IDE, enhancing robotic manipulation capabilities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project" onclick="openModal('project8')">
+          <h3>Cycloidal Drive</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Designed a cycloidal drive with an 11:1 gear ratio</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Utilized SolidWorks and manufactured it with 3D printing</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Optimized mechanical performance using GD&T</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 8 -->
+        <div id="project8-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project8')">&times;</span>
+            <h2>Cycloidal Drive</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              Designed a cycloidal drive with an 11:1 gear ratio using SolidWorks and manufactured it with 3D printing.<br>
+              Optimized mechanical performance using GD&T and controlled the drive with Arduino IDE. Layout developed for potential future manufacturing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="project" onclick="openModal('project9')">
+          <h3>Stress Analysis of Carbon Composite Material for Space-Based RF Components</h3>
+          <div class="container">
+            <div class="row">
+              <div class="box">
+                <ul>
+                  <li>Designed a carrier plate for microwave integrated circuits</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Conducted detailed modal, stress, and displacement analyses</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li>Assessed various lug constraints and materials</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Project 9 -->
+        <div id="project9-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('project9')">&times;</span>
+            <h2>Stress Analysis of Carbon Composite Material for Space-Based RF Components</h2>
+            <div class="project-images">
+              <img src="image1.jpg" alt="Project Image 1">
+              <img src="image2.jpg" alt="Project Image 2">
+            </div>
+            <p>
+              – Designed a carrier plate for microwave integrated circuits.<br>
+              – Conducted detailed modal, stress, and displacement analyses.<br>
+              – Assessed various lug constraints and materials for optimum design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript for modal functionality -->
+  <script>
+    function openModal(projectId) {
+      document.getElementById(projectId + '-modal').style.display = "block";
+    }
+    function closeModal(projectId) {
+      document.getElementById(projectId + '-modal').style.display = "none";
+    }
+    // Example loader function; customize as needed.
+    function myFunction() {
+      document.getElementById("loader").style.display = "none";
+    }
+    // Close modal when clicking outside of it.
+    window.onclick = function(event) {
+      let modals = document.getElementsByClassName("modal");
+      for (let i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+          modals[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYBfOmQ0K6b+I2N9gZzN3ogVVWVLTqvJ8BQfCE" crossorigin="anonymous"></script>
 </body>
 </html>
