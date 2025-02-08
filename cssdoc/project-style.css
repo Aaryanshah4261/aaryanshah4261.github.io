@@ -21,11 +21,9 @@ li {
     color: white;
     list-style: circle;
 }
-
 hr {
     background-color: white;
 }
-
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -42,7 +40,6 @@ hr {
     from { bottom:-300px; opacity:0 }
     to { bottom:0; opacity:1 }
 }
-
 #loader {
     position: absolute;
     left: 50%;
@@ -57,7 +54,6 @@ hr {
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
-
 .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
@@ -65,11 +61,9 @@ hr {
     animation-name: animatebottom;
     animation-duration: 1s
 }
-
 #page-content {
     display:none;
 }
-
 /*  NAV-BAR-------------*/
 #header {
     text-align: left;
@@ -87,7 +81,6 @@ hr {
 .nav-ele {
     padding-left: 10px;
 }
-
 /* Projects */
 .like-button {
     position: fixed;
@@ -128,3 +121,20 @@ hr {
     color: #b8babc;
 }
 .project-link:hover {
+    
+}
+
+/* Custom styles for project headings and descriptions */
+.project-description {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.project-description h2 {
+    color: #007bff;
+}
+.project-description ul li {
+    color: #555;
+}
