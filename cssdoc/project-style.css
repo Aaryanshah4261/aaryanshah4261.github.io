@@ -374,14 +374,17 @@ hr {
   transition: transform 0.3s ease;
 }
 
-.project:hover {
-  transform: scale(1.05);
-}
 .project ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: disc; /* Ensures filled circles */
     padding-left: 20px;
+}
+
+.project li {
+    margin-bottom: 10px;
+    color: white; /* Ensure the bullet points are visible */
+    list-style-position: inside; /* Ensure bullet points are inside the content */
 }
 
 .project li {
