@@ -377,3 +377,13 @@ hr {
 .project:hover {
   transform: scale(1.05);
 }
+.project ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project li {
+    margin-bottom: 10px;
+}
