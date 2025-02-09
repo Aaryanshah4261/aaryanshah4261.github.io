@@ -371,7 +371,7 @@ hr {
   margin: 10px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project ul {
@@ -385,20 +385,6 @@ hr {
     margin-bottom: 10px;
     color: white; /* Ensure the bullet points are visible */
     list-style-position: inside; /* Ensure bullet points are inside the content */
-}
-
-.project li {
-    margin-bottom: 10px;
-    color: white; /* Ensure the bullet points are visible */
-}
-.project {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
