@@ -392,3 +392,13 @@ hr {
     transform: scale(1.05);
     box-shadow: 0 0 10px white;
 }
+.project-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Adjust the gap between images as needed */
+}
+
+.project-images img {
+    width: 100%;
+    height: auto;
+}
