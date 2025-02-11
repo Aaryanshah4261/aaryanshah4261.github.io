@@ -401,4 +401,5 @@ hr {
 .project-images img {
     width: 100%;
     height: auto;
+    object-fit: cover; /* Ensures all images have the same size */
 }
