@@ -403,3 +403,16 @@ hr {
     height: auto;
     object-fit: cover; /* Ensures all images have the same size */
 }
+.project-description {
+    text-align: left;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.project-description ul {
+    padding-left: 20px;
+}
+
+.project-description li {
+    margin-bottom: 10px;
+}
