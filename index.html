@@ -25,6 +25,14 @@
     <link rel="icon" href="Images/Myphoto.png">
 
     <title>Aaryan's Portfolio</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51PZC6W2FR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-51PZC6W2FR');
+    </script>
 </head>
 
 <body onload="myFunction()">
@@ -72,9 +80,7 @@
             <img src="Images/mob-header.png" alt="" class="img-fluid mobile">
             <div class="title-con container-fluid" id="downarrow">
                 <div class="like-button container-fluid">
-                    <button id="like-btn" onclick="update()">
-                        Like
-                    </button>
+                    <button id="like-btn" onclick="trackButtonClick()">Like</button>
                         <p id="count"></p>
                 </div>
                 <h1 class="title-h1 container-fluid">Aaryan</h1>
