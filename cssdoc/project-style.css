@@ -416,18 +416,3 @@ hr {
 .project-description li {
     margin-bottom: 10px;
 }
-.project {
-    position: relative;
-}
-
-.project h3 {
-    position: sticky;
-    top: 0;
-    background-color: white; /* Adjust as needed */
-    z-index: 1;
-}
-
-.project-details {
-    max-height: 200px; /* Adjust height as needed */
-    overflow-y: auto;
-}
