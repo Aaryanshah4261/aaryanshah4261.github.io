@@ -1,37 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
-    text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    background-color:  #141414;    /* <--- This is the background color */
-    color: #dc1d62;
-    /* #F5EEDC */
+    text-align: center;
+    background-color: #161616;
 }
 h1 {
-    font-size: 5rem;
     font-family: 'Merriweather', serif;
     font-weight: 900;
+    font-size: 5rem;
+    color: #dc1d62;
     letter-spacing: 4px;
 }
-
-/* Add or modify for h2, h3 as needed */
-h2, h3 {
-    /* Example changes */
-    color: #123456;
-    text-transform: uppercase;
-    font-style: italic;
+a {
+    text-decoration: none;
 }
-.navigation-bar a, .nav-ul a, .nav-ele a {
-    color: white; /* Change the text color */
-    font-size: 1.2rem; /* Change size */
-    font-family: 'Ubuntu', sans-serif; /* Change font */
-    padding: 10px 15px; /* Add padding */
-    border-radius: 6px; /* Rounded corners */
-    background: #dc1d62; /* Add background */
-    transition: background 0.3s, color 0.3s;
+li {
+    color: white;
+    list-style: circle;
 }
 
-.navigation-bar a:hover {
-    background: #fff;
-    color: #dc1d62;
+hr {
+   background-color: white;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes animatebottom {
+    from { bottom:-300px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+    from{ bottom:-300px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    margin: -25px 0 0 -25px;
+    border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid #03A9F4;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+#page-content {
+    display:none;
+}
+
+
+/*  NAV-BAR-------------*/
+#header {
+    text-align: left;
+}
+.navigation-bar {
+    margin-left: 7%;
+}
+.navbar-custom {
+    background-color: white;
+    opacity: 0.9;
+}
+.nav-ul {
+    margin-left: 65%;
+}
+.nav-ele {
+    padding-left: 10px;
 }
 .project-card {
     transition: transform 0.2s, box-shadow 0.2s;
