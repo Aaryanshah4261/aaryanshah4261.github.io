@@ -1,3 +1,8 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background-color: #161616;
+}
 /* --- Projects Section Grid and Modal --- */
 .projects-grid {
   display: grid;
