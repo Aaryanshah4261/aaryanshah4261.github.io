@@ -1,7 +1,63 @@
 body {
+    background: #fff; /* Or your site's main background */
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    background-color: #161616;
+    color: #222;
+}
+
+.project-card {
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+.project-card:focus, .project-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
+    outline: none;
+}
+.project-thumb {
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+.modal-content {
+    border-radius: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.carousel-inner img {
+    max-height: 300px;
+    object-fit: contain;
+}
+.badge {
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.card-title,
+.modal-title,
+#projects h1,
+#projects h2,
+#projects h3,
+#projects h4,
+#projects h5,
+#projects h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+.card-text,
+.card-body,
+.modal-body,
+ul,
+li,
+.project-card,
+.btn,
+#projects {
+    font-family: 'Ubuntu', sans-serif;
+}
+@media (max-width: 767px) {
+    .project-thumb {
+        height: 130px;
+    }
 }
 /* --- Projects Section Grid and Modal --- */
 .projects-grid {
