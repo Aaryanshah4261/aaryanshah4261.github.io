@@ -53,16 +53,16 @@
 
     <!-- PROJECTS GRID -->
     <div class="container my-5" id="projects">
-        <h1 class="mb-4 text-center">My Projects</h1>
+        <h1 class="mb-4 text-center" style="margin-top: 2rem;">My Projects</h1>
         <div class="row g-4">
 
-            <!-- 1. EPC Project Card -->
+            <!-- 1. Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalEPC">
                     <img src="images/EPC_1.png" class="card-img-top project-thumb" alt="EPC Project Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title">Structural and Thermal Evaluation of Electronic Power Conditioner (EPC)</h5>
-                        <p class="card-text">Designed and simulated an EPC unit for microwave space payloads with weight optimization and DFMEA.</p>
+                        <p class="card-text">Comprehensive design and simulation of an EPC unit for microwave space payloads with significant weight optimization and DFMEA risk assessment.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">Autodesk Inventor</span>
                             <span class="badge bg-secondary">Ansys</span>
@@ -81,7 +81,13 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <!-- Carousel for images -->
+                            <p>
+                                Designed three iterations of an Electronic Power Conditioner (EPC) unit for microwave space payloads using Autodesk Inventor. 
+                                Carried out comprehensive structural and thermal simulations, including modal, quasi-static, random response, steady-state, and transient thermal analyses using Ansys Workbench. 
+                                Performed DFMEA to identify and mitigate structural and thermal risks. 
+                                Topology optimization reduced weight by 47% while maintaining structural integrity. 
+                                Analyzed using a combination of 1-D, 2-D, and 3-D elements for different parts.
+                            </p>
                             <div id="epcCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/EPC_1.png" class="d-block w-100" alt="EPC Image 1"></div>
@@ -96,18 +102,6 @@
                                     <span class="carousel-control-next-icon"></span>
                                 </button>
                             </div>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">Autodesk Inventor</span>
-                                <span class="badge bg-secondary">Ansys</span>
-                                <span class="badge bg-secondary">DFMEA</span>
-                            </div>
-                            <ul>
-                                <li>Designed three EPC unit iterations for microwave space payloads using Autodesk Inventor</li>
-                                <li>Comprehensive structural and thermal simulations (modal, quasi-static, random response, steady-state, transient thermal) in Ansys Workbench</li>
-                                <li>DFMEA performed to identify and mitigate structural and thermal risks</li>
-                                <li>Topology optimization reduced weight by 47%, maintaining structural integrity</li>
-                                <li>Analysis using a combination of 1-D, 2-D, and 3-D elements for different parts</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/epc-project" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
                                 <a href="https://your-epc-demo.com" target="_blank" class="btn btn-outline-dark btn-sm me-2">Demo</a>
@@ -118,13 +112,13 @@
                 </div>
             </div>
 
-            <!-- 2. Toyota Project Card -->
+            <!-- 2. Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalToyota">
                     <img src="images/Toyota_2.png" class="card-img-top project-thumb" alt="Toyota Project Thumbnail">
                     <div class="card-body">
-                        <h5 class="card-title">Design Optimization of Driver Safety Parameters (Toyota RAV4)</h5>
-                        <p class="card-text">Crashworthiness study for obese female occupant; safety features optimized using LS-Dyna and Taguchi method.</p>
+                        <h5 class="card-title">Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h5>
+                        <p class="card-text">Crashworthiness study targeting the safety of an obese female driver, with safety features optimized via LS-Dyna simulations and Taguchi method.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">LS-Dyna</span>
                             <span class="badge bg-secondary">Crash Simulation</span>
@@ -143,6 +137,12 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                Reduced injury risks for a short, obese female occupant by optimizing vehicle safety features. 
+                                Conducted crashworthiness simulations using LS-Dyna and applied the Taguchi method for parameter refinement. 
+                                Airbag, seatbelt, and structure optimization led to a 45.85% reduction in P-Joint injury values. 
+                                Delivered actionable engineering recommendations for real-world vehicle safety improvements.
+                            </p>
                             <div id="toyotaCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/Toyota_2.png" class="d-block w-100" alt="Toyota Image 1"></div>
@@ -158,34 +158,22 @@
                             <video width="100%" controls>
                                 <source src="images/Toyota_Safety.mp4" type="video/mp4">
                             </video>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">LS-Dyna</span>
-                                <span class="badge bg-secondary">Crash Simulation</span>
-                                <span class="badge bg-secondary">Taguchi Method</span>
-                            </div>
-                            <ul class="mt-3">
-                                <li>Reduced injury risks for a short, obese female occupant by optimizing vehicle safety features</li>
-                                <li>LS-Dyna crash simulations with Taguchi matrix refined safety parameters</li>
-                                <li>P-Joint injury values reduced by 45.85% via airbag, seatbelt, and structure optimization</li>
-                                <li>Provided engineering recommendations for real-world crash safety</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/toyota-safety" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
                                 <a href="#" target="_blank" class="btn btn-outline-dark btn-sm me-2 disabled" tabindex="-1" aria-disabled="true">Demo</a>
-                                <!-- No Paper for this project -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. CFRP Project Card -->
+            <!-- 3. Stress Analysis of Carbon Composite Material for Space-Based RF Components -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalCFRP">
                     <img src="images/CFRP_1.png" class="card-img-top project-thumb" alt="CFRP Project Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title">Stress Analysis of Carbon Composite Material for Space-Based RF Components</h5>
-                        <p class="card-text">Carrier plate design using CFRP, published in Springer LNME; stress and weight significantly reduced.</p>
+                        <p class="card-text">Carrier plate design using CFRP, published in Springer LNME; stress and weight significantly reduced for microwave IC applications.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">SolidWorks</span>
                             <span class="badge bg-secondary">CFRP</span>
@@ -204,6 +192,12 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                Designed a carrier plate for microwave integrated circuits using Kovar and CFRP materials in SolidWorks. 
+                                Performed modal, stress, and displacement analyses through FEM. 
+                                CFRP integration reduced overall stress by 85% and weight by 78%. 
+                                Results published in Springer's LNME series.
+                            </p>
                             <div id="cfrpCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/CFRP_1.png" class="d-block w-100" alt="CFRP Image 1"></div>
@@ -218,20 +212,8 @@
                                     <span class="carousel-control-next-icon"></span>
                                 </button>
                             </div>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">SolidWorks</span>
-                                <span class="badge bg-secondary">CFRP</span>
-                                <span class="badge bg-secondary">FEA</span>
-                            </div>
-                            <ul>
-                                <li>Designed carrier plate for microwave ICs with Kovar material (SolidWorks)</li>
-                                <li>Modal, stress, and displacement analyses via FEM</li>
-                                <li>CFRP integration reduced stress by 85%, weight by 78%</li>
-                                <li>Published in Springer’s LNME series</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/cfrp-rf-components" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
-                                <!-- No Demo -->
                                 <a href="https://link.springer.com/your-paper" target="_blank" class="btn btn-outline-dark btn-sm">Paper</a>
                             </div>
                         </div>
@@ -239,13 +221,13 @@
                 </div>
             </div>
 
-            <!-- 4. Wheelchair Model Project Card -->
+            <!-- 4. Wheelchair Model for Paraplegic Patients -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalWheelchair">
                     <img src="images/Wheelchair_1.png" class="card-img-top project-thumb" alt="Wheelchair Project Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title">Wheelchair Model for Paraplegic Patients</h5>
-                        <p class="card-text">Designed an ergonomic wheelchair with adjustable seating, cost-effective structure, and robust FEA validation.</p>
+                        <p class="card-text">Developed an affordable and ergonomic wheelchair with adjustable seating and FEA-validated structure for enhanced comfort and safety.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">SolidWorks</span>
                             <span class="badge bg-secondary">ANSYS</span>
@@ -264,6 +246,13 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                Custom-designed wheelchair frame with ergonomic seating for paraplegic patients.
+                                Focused on comfort, adjustability, and affordability. 
+                                Frame optimized for both weight and strength. 
+                                Structural integrity validated using FEA in ANSYS. 
+                                Cost-effective materials and components selected for accessible manufacturing.
+                            </p>
                             <div id="wheelchairCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/Wheelchair_1.png" class="d-block w-100" alt="Wheelchair Image 1"></div>
@@ -276,17 +265,6 @@
                                     <span class="carousel-control-next-icon"></span>
                                 </button>
                             </div>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">SolidWorks</span>
-                                <span class="badge bg-secondary">ANSYS</span>
-                                <span class="badge bg-secondary">Ergonomics</span>
-                            </div>
-                            <ul>
-                                <li>Customizable seat design for paraplegic comfort</li>
-                                <li>Frame optimized for weight and strength</li>
-                                <li>Validated structure with FEA (ANSYS)</li>
-                                <li>Cost-effective materials and components</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/wheelchair-model" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
                             </div>
@@ -295,13 +273,13 @@
                 </div>
             </div>
 
-            <!-- 5. Series Elastic Actuator Project Card -->
+            <!-- 5. Series Elastic Actuator for Exoskeleton Applications -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalSEA">
                     <img src="images/SEA_1.png" class="card-img-top project-thumb" alt="SEA Project Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title">Series Elastic Actuator for Exoskeleton Applications</h5>
-                        <p class="card-text">Developed a compliant actuator with precise force control and safe human-robot interaction.</p>
+                        <p class="card-text">Designed a compliant actuator with precise force control and robust human-robot safety for wearable exoskeletons.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">MATLAB</span>
                             <span class="badge bg-secondary">SolidWorks</span>
@@ -320,6 +298,11 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                Developed and simulated a series elastic actuator for wearable exoskeletons. 
+                                Created a compliant actuator for safe and accurate force output using MATLAB-based control systems. 
+                                Modeled the actuator in SolidWorks and performed safety testing for human-robot interaction.
+                            </p>
                             <div id="seaCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/SEA_1.png" class="d-block w-100" alt="SEA Image 1"></div>
@@ -332,17 +315,6 @@
                                     <span class="carousel-control-next-icon"></span>
                                 </button>
                             </div>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">MATLAB</span>
-                                <span class="badge bg-secondary">SolidWorks</span>
-                                <span class="badge bg-secondary">Control Systems</span>
-                            </div>
-                            <ul>
-                                <li>Designed and simulated a series elastic actuator (SEA) for wearable exoskeletons</li>
-                                <li>MATLAB-based control for compliant force output</li>
-                                <li>CAD model with integrated elastic elements</li>
-                                <li>Tested safe human-robot interaction</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/series-elastic-actuator" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
                             </div>
@@ -351,13 +323,13 @@
                 </div>
             </div>
 
-            <!-- 6. Robotic Gripper Project Card -->
+            <!-- 6. Robotic Gripper with Shape Adaptation -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalGripper">
                     <img src="images/Gripper_1.png" class="card-img-top project-thumb" alt="Gripper Project Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title">Robotic Gripper with Shape Adaptation</h5>
-                        <p class="card-text">Designed a robotic gripper with shape-adaptive jaws for versatile object handling.</p>
+                        <p class="card-text">Built a robotic gripper with shape-adaptive jaws, enabling secure and versatile grasp of irregular objects.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">SolidWorks</span>
                             <span class="badge bg-secondary">Robotics</span>
@@ -376,6 +348,11 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                Designed a robotic gripper with adaptive jaw mechanisms to handle objects of varying shapes and sizes.
+                                Utilized SolidWorks for CAD and 3D printed prototypes for validation.
+                                Tested grip strength and reliability for real-world scenarios.
+                            </p>
                             <div id="gripperCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/Gripper_1.png" class="d-block w-100" alt="Gripper Image 1"></div>
@@ -388,16 +365,6 @@
                                     <span class="carousel-control-next-icon"></span>
                                 </button>
                             </div>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">SolidWorks</span>
-                                <span class="badge bg-secondary">Robotics</span>
-                                <span class="badge bg-secondary">3D Printing</span>
-                            </div>
-                            <ul>
-                                <li>Shape-adaptive design for irregular object grasping</li>
-                                <li>CAD and 3D printed prototypes</li>
-                                <li>Validated grip strength and reliability</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/robotic-gripper" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
                             </div>
@@ -406,13 +373,13 @@
                 </div>
             </div>
 
-            <!-- 7. Cycloidal Drive Project Card -->
+            <!-- 7. Cycloidal Drive for Robotics -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalCycloidal">
                     <img src="images/Cycloidal_1.png" class="card-img-top project-thumb" alt="Cycloidal Project Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title">Cycloidal Drive for Robotics</h5>
-                        <p class="card-text">Developed a compact, high-torque cycloidal drive for robotic actuators with custom gear profiles.</p>
+                        <p class="card-text">Developed a compact and high-torque cycloidal drive, featuring custom gear profiles for precise robotic actuation.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">SolidWorks</span>
                             <span class="badge bg-secondary">Gear Design</span>
@@ -431,6 +398,10 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                Designed and fabricated a cycloidal drive for robotics applications, achieving compactness and high torque output. 
+                                Employed custom gear profiles using SolidWorks and prototyped for performance validation, focusing on efficiency and minimal backlash.
+                            </p>
                             <div id="cycloidalCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/Cycloidal_1.png" class="d-block w-100" alt="Cycloidal Image 1"></div>
@@ -443,16 +414,6 @@
                                     <span class="carousel-control-next-icon"></span>
                                 </button>
                             </div>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">SolidWorks</span>
-                                <span class="badge bg-secondary">Gear Design</span>
-                                <span class="badge bg-secondary">Robotics</span>
-                            </div>
-                            <ul>
-                                <li>Compact cycloidal reducer for high-torque output</li>
-                                <li>Custom gear profile design in SolidWorks</li>
-                                <li>Prototype tested for efficiency and backlash</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/cycloidal-drive" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
                             </div>
@@ -461,13 +422,13 @@
                 </div>
             </div>
 
-            <!-- 8. Logistics Management Solution Project Card -->
+            <!-- 8. Logistics Management Solution -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalLogistics">
                     <img src="images/Logistics_1.png" class="card-img-top project-thumb" alt="Logistics Project Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title">Logistics Management Solution</h5>
-                        <p class="card-text">Developed an automated logistics platform for renewable energy projects, optimizing supply chain and reducing costs.</p>
+                        <p class="card-text">Automated platform for renewable energy logistics, optimizing supply chain efficiency and reducing operational costs.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">Python</span>
                             <span class="badge bg-secondary">Automation</span>
@@ -486,6 +447,11 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                Developed an automated logistics management platform tailored for the renewable energy sector. 
+                                Integrated Python backend for tracking, and dashboard visualization to streamline the supply chain. 
+                                Achieved a 25% reduction in operational costs and successfully integrated with major ERP systems.
+                            </p>
                             <div id="logisticsCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/Logistics_1.png" class="d-block w-100" alt="Logistics Image 1"></div>
@@ -498,17 +464,6 @@
                                     <span class="carousel-control-next-icon"></span>
                                 </button>
                             </div>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">Python</span>
-                                <span class="badge bg-secondary">Automation</span>
-                                <span class="badge bg-secondary">Supply Chain</span>
-                            </div>
-                            <ul>
-                                <li>Automated logistics tracking for renewable energy supply chain</li>
-                                <li>Python backend with dashboard visualization</li>
-                                <li>Reduced operational costs by 25%</li>
-                                <li>Integrated with SAP and other ERP systems</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/logistics-management" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
                             </div>
@@ -517,13 +472,13 @@
                 </div>
             </div>
 
-            <!-- 9. Route Simulation Project Card -->
+            <!-- 9. Route Simulation for Solar Component Delivery -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalRoute">
                     <img src="images/Route_1.png" class="card-img-top project-thumb" alt="Route Project Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title">Route Simulation for Solar Component Delivery</h5>
-                        <p class="card-text">Simulated optimal routes for solar components delivery to remote project sites using Python-based algorithms.</p>
+                        <p class="card-text">Simulated and optimized routes for solar component delivery to remote sites using Python-based algorithms.</p>
                         <div class="mb-2">
                             <span class="badge bg-secondary">Python</span>
                             <span class="badge bg-secondary">Simulation</span>
@@ -542,21 +497,15 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                Created a simulation tool to optimize delivery routes for solar components to remote project sites. 
+                                Leveraged Python to develop algorithms that reduced average delivery times by 18%, adapting to real-world road and weather conditions.
+                            </p>
                             <div id="routeCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="images/Route_1.png" class="d-block w-100" alt="Route Image 1"></div>
                                 </div>
                             </div>
-                            <div class="mb-2">
-                                <span class="badge bg-secondary">Python</span>
-                                <span class="badge bg-secondary">Simulation</span>
-                                <span class="badge bg-secondary">Logistics</span>
-                            </div>
-                            <ul>
-                                <li>Developed simulation for transport route optimization</li>
-                                <li>Reduced average delivery time by 18%</li>
-                                <li>Adapted algorithms for real-world road conditions</li>
-                            </ul>
                             <div class="mt-3">
                                 <a href="https://github.com/yourprofile/route-simulation" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
                             </div>
