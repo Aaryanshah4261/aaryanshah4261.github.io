@@ -5,6 +5,20 @@ body {
     color: #dc1d62;
     /* #F5EEDC */
 }
+h1 {
+    font-size: 5rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+/* Add or modify for h2, h3 as needed */
+h2, h3 {
+    /* Example changes */
+    color: #123456;
+    text-transform: uppercase;
+    font-style: italic;
+}
 .project-card {
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
