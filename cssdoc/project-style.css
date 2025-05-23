@@ -1,6 +1,7 @@
 .project-card {
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    /* No background or color override! */
 }
 .project-card:focus, .project-card:hover {
     transform: scale(1.04);
@@ -14,6 +15,7 @@
 }
 .modal-content {
     border-radius: 1rem;
+    /* No background or color override! */
 }
 .carousel-inner img {
     max-height: 300px;
