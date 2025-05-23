@@ -19,6 +19,20 @@ h2, h3 {
     text-transform: uppercase;
     font-style: italic;
 }
+.navigation-bar a, .nav-ul a, .nav-ele a {
+    color: white; /* Change the text color */
+    font-size: 1.2rem; /* Change size */
+    font-family: 'Ubuntu', sans-serif; /* Change font */
+    padding: 10px 15px; /* Add padding */
+    border-radius: 6px; /* Rounded corners */
+    background: #dc1d62; /* Add background */
+    transition: background 0.3s, color 0.3s;
+}
+
+.navigation-bar a:hover {
+    background: #fff;
+    color: #dc1d62;
+}
 .project-card {
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
