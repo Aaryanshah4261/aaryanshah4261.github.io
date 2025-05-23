@@ -1,379 +1,176 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
+    <!-- (Copy your existing head content here, including CSS links and meta tags) -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
-    <!-- Google-Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
-
-    <script src="https://use.fontawesome.com/3a02512a44.js"></script>
-
-    <!-- External-CSS -->
-    <link rel="stylesheet" href="cssdoc/project-style.css">
+    <title>Projects | Aaryan's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cssdoc/styles.css">
     <link rel="icon" href="Images/Myphoto.png">
-
-    <title>Aaryan's Portfolio</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51PZC6W2FR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-51PZC6W2FR');
-    </script>
 </head>
-<body onload="myFunction()">
-    <!-- Loading -->
-    <div id="loader"></div>
 
-    <!-- NAVBAR -->
-    <div class="animate-bottom" id="page-content">
-        <div id="header">
-            <nav class="fixed-top navbar navbar-expand-lg navbar-light navbar-custom">
-                <div class="navigation-bar container container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <h2>Projects</h2>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav-ul navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-ele nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-ele nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+<body>
+    <!-- (Copy your existing navbar/header here if needed) -->
 
-        <div id="projects">
-            <div class="like-button container-fluid">
-                <button id="like-btn" onclick="update()">
-                    Like
-                </button>
-                <p id="count"></p>
+    <div class="container my-5" id="projects">
+        <h1 class="mb-4">Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card" data-project="1">
+                <span>Project 1</span>
             </div>
-            <h1>My Projects</h1>
-            <div class="myprojects-box">
-                <!-- Project Section -->
-                <!-- Project 1 -->
-                <div class="project" onclick="openModal('project5')">
-                    <h3>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h3>
-                    <ul>
-                        <li>Quasi-Static Analysis</li>
-                        <li>Random Response Analysis</li>
-                        <li>Steady-State Thermal Analys</li>
-                        <li>Transient Thermal Analysis</li>
-                        <li>Topology Optimizations</li>
-                        <li>DFMEA (Design Failure Mode and Effects Analysis)</li></ul>
-                </div>
-                <div id="project5-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project5')">&times;</span>
-                        <h2>Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h2>
-                        <div class="project-images">
-                            <img src="images/EPC_1.png" alt="Project Image 1">
-                            <img src="images/EPC_2.png" alt="Project Image 2">
-                            <img src="images/EPC_3.png" alt="Project Image 3">
-                            <img src="images/EPC_4.png" alt="Project Image 4">
-                        </div>
-                        <ul>
-                        <li>Designed three iterations of an Electronic Power Conditioner (EPC) unit for microwave space payloads using Autodesk Inventor</li>
-                        <li>Conducted comprehensive structural and thermal simulations, including modal, quasi-static, 
-                            random response, steady-state, and transient thermal analyses, using Ansys Workbench to 
-                            evaluate design performance under space conditions</li>
-                        <li>Performed DFMEA to identify potential failure modes in the EPC design, enabling proactive 
-                            mitigation of structural and thermal risks.</li></ul>
-                        <li>Performed topology optimization to minimize material usage while maintaining structural 
-                            integrity, resulting in reduction of weight by 47%</li></ul>
-                        <li>Performed all the analysis with the combination of 1-D, 2-D and 3-D elements for different 
-                            parts of the EPC unit.</li></ul>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project" onclick="openModal('project2')">
-                    <h3>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h3>
-                    <ul>
-                        <li>Vehicle Crashworthiness</li>
-                        <li>LS-Dyna Crash Simulations</li>
-                        <li>Biomechanics in Automotive Safety</li>
-                        <li>Injury Metrics Reduction</li>
-                        <li>Taguchi Method for Design Optimization</li></ul>
-                </div>
-                <div id="project2-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project2')">&times;</span>
-                        <h2>Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h2>
-                        <div class="project-images">
-                            <img src="images/Toyota_2.png" alt="Project Image 1">
-                            <img src="images/Toyota_3.png" alt="Project Image 2">
-                        </div>
-                        <video width="320" height="240" controls>
-                            <source src="images/Toyota_Safety.mp4" type="video/mp4">
-                        </video>
-                        <ul>
-                        <li>Aimed to reduce injury risks for a short, obese female occupant by optimizing vehicle safety features.</li>
-                        <li>Conducted LS-Dyna crash simulations using a Taguchi matrix, refining safety parameters iteratively.</li>
-                        <li>Reduced P-Joint injury values by 45.85% through optimization of airbag deployment, seatbelt geometry, and structural elements.</li>
-                        <li>Provided engineering-based recommendations to enhance occupant safety in real-world crash conditions.</li></ul>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project" onclick="openModal('project9')">
-                    <h3>Stress Analysis of Carbon Composite Material for Space-Based RF Components</h3>
-                    <ul>
-                        <li>Mechanical Design of Packages</li>
-                        <li>Modal and Stress Analysis</li>
-                        <li>Displacement Analysis</li>
-                        <li>Carbon Fiber Reinforced Plastics (CFRP)</li>
-                        <li>Material Selection for Aerospace Applications</li>
-                        <li>Finite Element Analysis (FEA)</li></ul>
-                </div>
-                <div id="project9-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project9')">&times;</span>
-                        <h2>Stress Analysis of Carbon Composite Material for Space-Based RF Components</h2>
-                        <div class="project-images">
-                            <img src="images/CFRP_1.png" alt="Project Image 1">
-                            <img src="images/CFRP_2.png" alt="Project Image 2">
-                            <img src="images/CFRP_3.png" alt="Project Image 3">
-                            <img src="images/CFRP_4.png" alt="Project Image 4">
-                        </div>
-                        <ul>
-                        <li>Designed a carrier plate for microwave integrated circuits, incorporating Kovar material using SolidWorks</li>
-                        <li>Performed modal, stress, and displacement analyses using Finite Element Method (FEM) to evaluate design performance.</li>
-                        <li>Integrated Carbon Fiber Reinforced Plastic (CFRP), reducing stress by 85% and component weight by 78%.</li>
-                        <li>Published findings in Springer’s LNME series, showcasing CFRP’s advantages in space applications..</li></ul>
-                    </div>
-                </div>
-                <div class="project" onclick="openModal('project1')">
-                    <h3>Parametric Finite Element Wheelchair Model for Crash Simulations</h3>
-                    <ul>
-                        <li>Finite Element Modeling</li>
-                        <li>Parametric Geometry Scaling</li>
-                        <li>Mesh Morphing and Scaling Automation</li>
-                        <li>Hypermesh for processing</li>
-                        <li>Process automation in Matlab</li></ul>
-                </div>
-                <!-- Modal Structure -->
-                <div id="project1-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project1')">&times;</span>
-                        <h2>Parametric Finite Element Wheelchair Model for Crash Simulations</h2>
-                        <!--<div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>-->
-                        <ul>
-                        <li>Developing a parametric finite element model for manual wheelchairs under the guidance of Prof. Jingwen Hu.</li>
-                        <li>Implementing HyperMesh to model different wheelchair configurations, allowing design parameter adjustments.</li>
-                        <li>Automating mesh morphing and scaling using MATLAB, streamlining the modeling process for crash simulations.</li>
-                        <li>Aiming to improve safety and durability of wheelchair designs by evaluating their performance in crash scenarios</li></ul>
-                    </div>
-                </div>
-                <!-- Repeat for other projects -->
-                <!-- Project 5 -->
-                <div class="project" onclick="openModal('project6')">
-                    <h3>Series Elastic Actuator</h3>
-                    <ul>
-                        <li>Compliant Actuation</li>
-                        <li>Torque Control in Robotics</li>
-                        <li>Backdrivable Mechanism Design</li>
-                        <li>Actuator Design</li>
-                        <li>Space Robotics</li></ul>
-                </div>
-                <div id="project6-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project6')">&times;</span>
-                        <h2>Series Elastic Actuator</h2>
-                       <!-- <div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>-->
-                        <ul>
-                        <li>Designed and developed a Series Elastic Actuator (SEA) for a humanoid robot intended for space applications.</li>
-                        <li>Engineered the actuator to achieve backdrivable torque below 2 Nm, allowing smooth and precise robotic movement.</li>
-                        <li>Integrated mechanical and electrical components, enabling seamless motion control and enhanced robotic functionality.</li></ul>
-                    </div>
-                </div>
-                <!-- Project 6 -->
-                <div class="project" onclick="openModal('project7')">
-                    <h3>Robotic Gripper</h3>
-                    <ul>
-                        <li>Mechanical Design - SolidWorks</li>
-                        <li>Mechatronics System Design</li>
-                        <li>Arduino-Based Control Systems</li>
-                        <li>3D Printing in Robotics</li>
-                        <li>Force and Precision Gripping Mechanism</li></ul>
-                </div>
-                <div id="project7-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project7')">&times;</span>
-                        <h2>Robotic Gripper</h2>
-                        <div class="project-images">
-                            <img src="images/Gripper_1.png" alt="Project Image 1">
-                            <img src="images/Gripper_2.png" alt="Project Image 2">
-                        </div>
-                        <ul>
-                        <li>Designed a robotic gripper using SolidWorks and manufactured it via 3D printing to enhance robotic dexterity.</li>
-                        <li>Integrated Arduino-controlled actuation, enabling precise gripping and manipulation of objects of varying shapes and sizes.</li>
-                        <li>Optimized the mechanical structure to minimize weight while maintaining gripping strength, improving energy efficiency.</li></ul>
-                    </div>
-                </div>
-                <!-- Project 7 -->
-                <div class="project" onclick="openModal('project8')">
-                    <h3>Cycloidal Drive</h3>
-                    <ul>
-                        <li>Mechanical Design - SolidWorks</li>
-                        <li>Cycloidal Gear Mechanism</li>
-                        <li>3D Printing for Prototyping</li>
-                        <li>GD&T (Geometric Dimensioning and Tolerancing)</li>
-                        <li>Arduino-Based Motor Control</li></ul>
-                </div>
-                <div id="project8-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project8')">&times;</span>
-                        <h2>Cycloidal Drive</h3>
-                        <div class="project-images">
-                            <img src="images/Gear_1.png" alt="Project Image 1">
-                            <img src="images/Gear_2.png" alt="Project Image 2">
-                            <img src="images/Gear_3.png" alt="Project Image 3">
-                            <img src="images/Gear_4.png" alt="Project Image 4">
-                        </div>
-                        <ul>
-                        <li>Designed a cycloidal drive with an 11:1 gear ratio in SolidWorks, ensuring precision through GD&T techniques.</li>
-                        <li>Manufactured and tested the drive using 3D printing, optimizing its mechanical efficiency for robotic applications.</li>
-                        <li>Operated the drive motors using Arduino IDE, implementing speed control algorithms for smooth motion.</li></ul>
-                    </div>
-                </div>
-                <!-- Project 8 -->
-                <div class="project" onclick="openModal('project3')">
-                    <h3>Logistics Management Solution</h3>
-                    <ul>
-                        <li>Data Analytics for Business Decision-Making</li>
-                        <li>Supply Chain Management</li>
-                        <li>Stakeholder Management</li>
-                        <li>Product Management</li>
-                        <li>Software Project Management</li>
-                        <li>Digital Transformation in Logistics</li></ul>
-                </div>
-                <div id="project3-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project3')">&times;</span>
-                        <h2>Logistics Management Solution</h2>
-                        <!--<div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>-->
-                        <p>
-                            <a href="https://lms.adani.com" target="_blank">Visit the portal</a>
-                        </p>
-                        <ul>
-                        <li>Led the development and implementation of an LMS to optimize and digitize end to end logistics operations for a $3 billion supply chain.</li>
-                        <li>Collaborated with cross-functional teams to integrate real-time tracking and automated reporting of goods within the LMS framework.</li>
-                        <li>Designed a data-driven dashboard using Power BI, providing insights into logistics performance and reducing manual efforts.</li>
-                        <li>The LMS reduced operational bottlenecks, improved workflow transparency, and enabled faster decision-making.</li></ul>
-                    </div>
-                </div>
-                <!-- Project 9 -->
-                <div class="project" onclick="openModal('project4')">
-                    <h3>Route Simulation</h3>
-                    <ul>
-                        <li>Route Optimization</li>
-                        <li>Simulation Modeling (SUMO)</li>
-                        <li>Data Analytics for Business Decision-Making</li></ul>
-                </div>
-                <div id="project4-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal('project4')">&times;</span>
-                        <h2>Route Simulation</h2>
-                         <!--<div class="project-images">
-                            <img src="image1.jpg" alt="Project Image 1">
-                            <img src="image2.jpg" alt="Project Image 2">
-                        </div>-->
-                        <ul>
-                        <li>Developed a route simulation model using SUMO (Simulation of Urban Mobility) to optimize logistics routes.</li>
-                        <li>Analyzed traffic patterns and reduced transportation time, improving supply chain efficiency across multiple business units.</li>
-                        <li>Applied data analytics techniques to identify the most cost-effective and time-efficient routes, reducing logistics costs.</li>
-                        <li>Assisted in integrating the simulation results into the Logistics Management Solution (LMS), streamlining decision-making.</li></ul>
-                    </div>
-                </div>
+            <div class="project-card" data-project="2">
+                <span>Project 2</span>
+            </div>
+            <div class="project-card" data-project="3">
+                <span>Project 3</span>
+            </div>
+            <div class="project-card" data-project="4">
+                <span>Project 4</span>
+            </div>
+            <div class="project-card" data-project="5">
+                <span>Project 5</span>
+            </div>
+            <div class="project-card" data-project="6">
+                <span>Project 6</span>
             </div>
         </div>
-
-        <hr><br>
-
-        <!-- Achievements -->
-       <!-- Achievements -->
-        <div class="sec-title">
-    <h1>Achievements</h1>
-</div>
-<div id="certificates">
-    <div class="certificate-box">
-        <ul>
-            <li>
-                <p>Ranked as the top performer in the department for the 2019 batch.</p>
-            </li>
-            <li>
-                <p>I was selected as a visiting student in which only two students were selected from the GTU with an acceptance rate of 2%.</p>
-            </li>
-            <li>
-                <p>Presented and Published two research papers in the international conference.</p>
-            </li>
-            <li>
-                <p>Got spot recognition for outstanding performance for the project of Logistics Management Solution during tenure at Adani Green Energy Ltd. (2023-2024)</p>
-            </li>
-        </ul>
-    </div>
-</div>
-        <div id="contact">
-            <div class="container-fluid">
-                <h1>Get in touch</h1>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/aaryanshah4261/" target="_blank">
-                        <i class="linkedin bi bi-linkedin"></i>
-                    </a>
-                    <a href="mailto:aaryansh@umich.edu" target="_blank">
-                        <i class="gmail pad-icon bi bi-envelope"></i>
-                    </a>
-
-                </div>
-                <div class="resume-btn">
-                    <a href="AaryanShah Resume.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg">Resume</button>
-                </div>
-                <h3 class="copy-right">© 2025 Aaryan</h3>
+        <!-- Modal for project details -->
+        <div id="project-modal" class="modal" style="display:none;">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div class="carousel-container">
+              <button class="carousel-prev">&#10094;</button>
+              <img id="carousel-img" src="" alt="Project Image">
+              <button class="carousel-next">&#10095;</button>
             </div>
+            <p id="modal-description"></p>
+            <div id="modal-badges"></div>
+            <ul id="modal-bullets"></ul>
+            <div id="modal-links"></div>
+          </div>
         </div>
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/transition-down.js"></script>
-    <script src="js/like-btn.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <!-- (Copy your existing footer/contact/etc. if needed) -->
+
+    <!-- Project Modal JavaScript -->
+    <script>
+    // Example projectData. Replace with actual data and image paths
+    const projectData = {
+      1: {
+        title: "Project 1 Title",
+        images: ["images/project1a.jpg", "images/project1b.jpg"],
+        desc: "Description for Project 1.",
+        badges: ["Ansys", "SolidWorks", "MATLAB"],
+        bullets: ["Bullet point 1", "Bullet point 2"],
+        links: {
+          github: "#",
+          demo: "#",
+          paper: ""
+        }
+      },
+      2: {
+        title: "Project 2 Title",
+        images: ["images/project2a.jpg", "images/project2b.jpg"],
+        desc: "Description for Project 2.",
+        badges: ["MATLAB"],
+        bullets: ["Feature A", "Feature B"],
+        links: {
+          github: "#",
+          demo: "#",
+          paper: "#"
+        }
+      },
+      3: {
+        title: "Project 3 Title",
+        images: ["images/project3a.jpg"],
+        desc: "Description for Project 3.",
+        badges: ["SolidWorks"],
+        bullets: ["Highlight 1", "Highlight 2"],
+        links: {
+          github: "#",
+          demo: "",
+          paper: ""
+        }
+      },
+      4: {
+        title: "Project 4 Title",
+        images: ["images/project4a.jpg", "images/project4b.jpg", "images/project4c.jpg"],
+        desc: "Description for Project 4.",
+        badges: ["Ansys", "MATLAB"],
+        bullets: ["Point 1", "Point 2", "Point 3"],
+        links: {
+          github: "#",
+          demo: "",
+          paper: "#"
+        }
+      },
+      5: {
+        title: "Project 5 Title",
+        images: ["images/project5a.jpg"],
+        desc: "Description for Project 5.",
+        badges: ["SolidWorks", "MATLAB"],
+        bullets: ["Item 1", "Item 2"],
+        links: {
+          github: "#",
+          demo: "#",
+          paper: ""
+        }
+      },
+      6: {
+        title: "Project 6 Title",
+        images: ["images/project6a.jpg"],
+        desc: "Description for Project 6.",
+        badges: ["Ansys"],
+        bullets: ["Key 1", "Key 2"],
+        links: {
+          github: "#",
+          demo: "#",
+          paper: "#"
+        }
+      }
+    };
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', function() {
+        const p = projectData[this.dataset.project];
+        if (!p) return;
+        let idx = 0;
+        document.getElementById('modal-title').innerText = p.title;
+        document.getElementById('carousel-img').src = p.images[0];
+        document.getElementById('modal-description').innerText = p.desc;
+        document.getElementById('modal-badges').innerHTML = p.badges.map(b => `<span class="badge">${b}</span>`).join('');
+        document.getElementById('modal-bullets').innerHTML = p.bullets.map(b => `<li>${b}</li>`).join('');
+        let links = '';
+        if (p.links.github) links += `<a href="${p.links.github}" target="_blank">GitHub</a> `;
+        if (p.links.demo) links += `<a href="${p.links.demo}" target="_blank">Demo</a> `;
+        if (p.links.paper) links += `<a href="${p.links.paper}" target="_blank">Paper</a>`;
+        document.getElementById('modal-links').innerHTML = links;
+
+        // Carousel controls
+        const imgElem = document.getElementById('carousel-img');
+        document.querySelector('.carousel-prev').onclick = function() {
+          idx = (idx - 1 + p.images.length) % p.images.length;
+          imgElem.src = p.images[idx];
+        };
+        document.querySelector('.carousel-next').onclick = function() {
+          idx = (idx + 1) % p.images.length;
+          imgElem.src = p.images[idx];
+        };
+
+        document.getElementById('project-modal').style.display = 'flex';
+      });
+    });
+
+    document.querySelector('.close-modal').onclick = function() {
+      document.getElementById('project-modal').style.display = 'none';
+    };
+    document.getElementById('project-modal').addEventListener('click', function(e) {
+      if (e.target === this) this.style.display = 'none';
+    });
     </script>
 </body>
 </html>
