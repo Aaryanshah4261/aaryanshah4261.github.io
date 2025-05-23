@@ -1,3 +1,10 @@
+body {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color:  #141414;    /* <--- This is the background color */
+    color: #dc1d62;
+    /* #F5EEDC */
+}
 .project-card {
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
