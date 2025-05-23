@@ -2,6 +2,7 @@ body {
     background: #fff; /* Or your site's main background */
     font-family: 'Ubuntu', sans-serif;
     color: #222;
+    background-color: #161616;
 }
 
 .project-card {
