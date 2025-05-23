@@ -4,7 +4,7 @@ html {
 body {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    background-color: #161616; /* old background */
+    background-color: #161616;
 }
 h1 {
     font-family: 'Merriweather', serif;
@@ -22,32 +22,56 @@ li {
 }
 hr {
    background-color: white;
+   border: none;
+   height: 1px;
+   margin: 2rem auto;
+   width: 60%;
 }
-/* ---- Old NAVBAR styles ---- */
+
+/* NAVBAR styles */
 #header {
     text-align: left;
-}
-.navigation-bar {
-    margin-left: 7%;
 }
 .navbar-custom {
     background-color: white;
     opacity: 0.9;
+    padding: 10px 0;
 }
 .nav-ul {
-    margin-left: 65%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 .nav-ele {
-    padding-left: 10px;
+    padding-left: 0;
+}
+.nav-ele a {
+    color: #161616;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-ele a:hover {
+    background: #dc1d62;
+    color: #fff;
 }
 
-/* ---- Project Card Styles with Contrast ---- */
+/* Project Card Styles with Contrast */
 .project-card, .card, .modal-content {
-    background: #23232b !important;  /* Contrasting dark card bg */
-    color: #e2e2e2 !important;       /* Light text for contrast */
+    background: #23232b !important;
+    color: #e2e2e2 !important;
     box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.10);
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 24px 16px;
 }
 .project-card:focus, .project-card:hover,
 .card:hover, .modal-content:hover {
@@ -58,20 +82,14 @@ hr {
 .card-title {
     font-family: 'Merriweather', serif;
     font-weight: 700;
-    color: #dc1d62 !important; /* Accent color for title */
+    color: #dc1d62 !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .card-text {
     font-family: 'Ubuntu', sans-serif;
     color: #e2e2e2 !important;
-}
-
-/* Project content */
-.project-content,
-.project li,
-.project-description,
-.project-description li {
-    color: #b8babc !important;
-    text-align: left;
+    margin-bottom: 1rem;
 }
 
 /* Project Images */
@@ -85,40 +103,34 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
-.carousel-inner img {
-    max-height: 300px;
-    object-fit: contain;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background: transparent;
-}
-.badge {
-    margin-right: 0.2rem;
-    margin-bottom: 0.2rem;
-}
-/* Old Achievements Section */
+
+/* Achievements Section */
 #certificates {
     border-radius: 1%;
     text-align: left;
     margin: 50px 15%;
     background-color: #111111;
     letter-spacing: 2px;
+    padding: 32px 0;
 }
 #certificates h2 {
     color: white;
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 #certificates p {
     color: #b8babc;
 }
+
+/* Certificate box */
 .certificate-box {
     padding: 30px 50px;
 }
 .certificate-box p {
     padding-bottom: 2px;
 }
-/* Old Contact Section */
+
+/* Contact Section */
 #contact {
     padding: 40px 0px 2px;
     background-color: #F0ECE3;
@@ -139,11 +151,11 @@ hr {
     font-size: 25px;
     padding: 20px 0px 20px;
 }
+.social-icons a {
+    margin: 0 10px;
+}
 .social-icons:hover {
     transition: 0.5s;
-}
-.pad-icon {
-    padding-left: 25px;
 }
 .linkedin:hover { color: #0A66C2; cursor: pointer; }
 .instagram:hover { color: rgb(241,45,45); cursor: pointer; }
@@ -161,199 +173,35 @@ hr {
 .copy-right {
     padding: 30px 0px 5px;
     color: #161616;
-}
-/* Project Container Styles */
-.project {
-    border: 1px solid #444;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
     text-align: center;
-    background: #23232b;
-    color: #e2e2e2;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #F0ECE3;
+    margin-top: 0;
 }
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px white;
-}
-.project ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    list-style-type: disc;
-    padding-left: 20px;
-}
-.project li {
-    margin-bottom: 10px;
-    color: #b8babc;
-    list-style-position: inside;
-}
-.project-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-.project-images img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.project-description {
-    text-align: left;
-    margin: 20px 0;
-    line-height: 1.6;
-}
-.project-description ul {
-    padding-left: 20px;
-}
-.project-description li {
-    margin-bottom: 10px;
-}
+
 /* Responsive styles */
 @media screen and (max-width:1200px) and (min-width:801px) {
     h1 { font-size: 5rem; }
 }
 @media screen and (max-width:800px){
-    #loader {
-        width: 60px;
-        height: 60px;
-    }
     h1 { font-size: 2.7rem; }
-    .like-button { left:35%; }
     .myprojects-box { padding: 0px 25px 100px; }
-    .section { margin-top: 30px; }
     #certificates {
         margin: 50px 10px 70px;
         background-color: #111111;
     }
-    .sec-title h1 { font-size: 2.7rem; }
     #certificates h2 { font-size: 1.5rem; }
     .certificate-box { padding: 30px 5px; }
     #contact h1 { font-size: 3rem; }
     .social-icons { font-size: 20px; }
     #contact h3 { font-size: 10px; }
+    .project-card {
+        max-width: 100%;
+        padding: 18px 2vw;
+    }
 }
 @media screen and (max-width:1000px){
     .nav-ul { margin-left: auto; }
     .nav-ele { padding-left: 0px; }
 }
 
-/* Modal Styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-}
-.modal-content {
-  background-color: #23232b;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  color: #e2e2e2;
-}
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Loader/Animation styles (unchanged) */
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-@-webkit-keyframes animatebottom {
-    from { bottom:-300px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-}
-@keyframes animatebottom { 
-    from{ bottom:-300px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-}
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 90px;
-    height: 90px;
-    margin: -25px 0 0 -25px;
-    border: 7px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 7px solid #03A9F4;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-#page-content {
-    display:none;
-}
-
-/* Like button styles (unchanged) */
-.like-button {
-    position: fixed;
-    top: 100px;
-    left:40%;
-    letter-spacing: 2px;
-    z-index: 1;
-    opacity: 0.5;
-}
-#count {
-    color: rgb(155, 155, 155);
-    font-weight: bolder;
-}
-#like-btn {
-    border: none;
-    background-color: #0A66C2;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-#projects {
-    border-radius: 1%;
-    margin-top: 100px;
-}
-.myprojects-box {
-    padding: 50px 50px;
-    color: white;
-}
-.section {
-    text-align: left;
-    padding: 20px 25px 10px 25px;
-    background-color: #111111;
-}
-.project-link:hover {
-    transition: 0.1s;
-    transform: translateX(15px);
-    text-shadow: 0 0 5px rgb(147, 147, 255);
-}
-.sec-1:hover, .sec-2:hover, .sec-3:hover, .sec-4:hover {
-    transition: .5s;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px white;
-}
+/* Hide loader/page-content logic removed for simplicity */
