@@ -13,6 +13,9 @@ h1 {
     color: #dc1d62;
     letter-spacing: 4px;
 }
+#projects h1 {
+    margin-top: 2rem; /* Moves "My Projects" heading down for visual space */
+}
 a {
     text-decoration: none;
 }
@@ -353,8 +356,4 @@ li,
     object-fit: cover;
     border-bottom: 1px solid #222;
 }
-@media (max-width: 767px) {
-    .project-thumb {
-        height: 130px;
-    }
-}
+@media (max-width: 767
