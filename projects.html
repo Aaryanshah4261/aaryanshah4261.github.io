@@ -1,176 +1,290 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <!-- (Copy your existing head content here, including CSS links and meta tags) -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects | Aaryan's Portfolio</title>
+
+    <!-- Bootstrap CSS & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="cssdoc/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Google-Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/3a02512a44.js"></script>
+
+    <!-- External-CSS -->
+    <link rel="stylesheet" href="cssdoc/project-style.css">
     <link rel="icon" href="Images/Myphoto.png">
+    <title>Aaryan's Portfolio</title>
 </head>
-
 <body>
-    <!-- (Copy your existing navbar/header here if needed) -->
+    <!-- NAVBAR -->
+    <div id="header">
+        <nav class="fixed-top navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="navigation-bar container container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h2>Projects</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav-ul navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-ele nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-ele nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
+    <!-- PROJECTS GRID -->
     <div class="container my-5" id="projects">
-        <h1 class="mb-4">Projects</h1>
-        <div class="projects-grid">
-            <div class="project-card" data-project="1">
-                <span>Project 1</span>
+        <h1 class="mb-4 text-center">My Projects</h1>
+        <div class="row g-4">
+            <!-- PROJECT CARD 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalEPC">
+                    <img src="images/EPC_1.png" class="card-img-top project-thumb" alt="EPC Project Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Structural and Thermal Evaluation of Electronic Power Conditioner (EPC)</h5>
+                        <p class="card-text">Designed and simulated an EPC unit for microwave space payloads with weight optimization and DFMEA.</p>
+                        <div class="mb-2">
+                            <span class="badge bg-secondary">Autodesk Inventor</span>
+                            <span class="badge bg-secondary">Ansys</span>
+                            <span class="badge bg-secondary">DFMEA</span>
+                        </div>
+                        <button class="btn btn-outline-dark btn-sm mt-2 w-100">View Details</button>
+                    </div>
+                </div>
             </div>
-            <div class="project-card" data-project="2">
-                <span>Project 2</span>
+            <!-- Modal - EPC -->
+            <div class="modal fade" id="modalEPC" tabindex="-1" aria-labelledby="modalEPCLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="modalEPCLabel">Structural and Thermal Evaluation of Electronic Power Conditioner (EPC) Unit for Space Payload</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Carousel for images -->
+                            <div id="epcCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="images/EPC_1.png" class="d-block w-100" alt="EPC Image 1"></div>
+                                    <div class="carousel-item"><img src="images/EPC_2.png" class="d-block w-100" alt="EPC Image 2"></div>
+                                    <div class="carousel-item"><img src="images/EPC_3.png" class="d-block w-100" alt="EPC Image 3"></div>
+                                    <div class="carousel-item"><img src="images/EPC_4.png" class="d-block w-100" alt="EPC Image 4"></div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#epcCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#epcCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="mb-2">
+                                <span class="badge bg-secondary">Autodesk Inventor</span>
+                                <span class="badge bg-secondary">Ansys</span>
+                                <span class="badge bg-secondary">DFMEA</span>
+                            </div>
+                            <ul>
+                                <li>Designed three EPC unit iterations for microwave space payloads using Autodesk Inventor</li>
+                                <li>Comprehensive structural and thermal simulations (modal, quasi-static, random response, steady-state, transient thermal) in Ansys Workbench</li>
+                                <li>DFMEA performed to identify and mitigate structural and thermal risks</li>
+                                <li>Topology optimization reduced weight by 47%, maintaining structural integrity</li>
+                                <li>Analysis using a combination of 1-D, 2-D, and 3-D elements for different parts</li>
+                            </ul>
+                            <div class="mt-3">
+                                <a href="https://github.com/yourprofile/epc-project" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
+                                <a href="https://your-epc-demo.com" target="_blank" class="btn btn-outline-dark btn-sm me-2">Demo</a>
+                                <a href="https://your-epc-paper.com" target="_blank" class="btn btn-outline-dark btn-sm">Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-card" data-project="3">
-                <span>Project 3</span>
+            <!-- PROJECT CARD 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalToyota">
+                    <img src="images/Toyota_2.png" class="card-img-top project-thumb" alt="Toyota Project Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Design Optimization of Driver Safety Parameters (Toyota RAV4)</h5>
+                        <p class="card-text">Crashworthiness study for obese female occupant; safety features optimized using LS-Dyna and Taguchi method.</p>
+                        <div class="mb-2">
+                            <span class="badge bg-secondary">LS-Dyna</span>
+                            <span class="badge bg-secondary">Crash Simulation</span>
+                            <span class="badge bg-secondary">Taguchi Method</span>
+                        </div>
+                        <button class="btn btn-outline-dark btn-sm mt-2 w-100">View Details</button>
+                    </div>
+                </div>
             </div>
-            <div class="project-card" data-project="4">
-                <span>Project 4</span>
+            <!-- Modal - Toyota -->
+            <div class="modal fade" id="modalToyota" tabindex="-1" aria-labelledby="modalToyotaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="modalToyotaLabel">Design Optimization of Driver Safety Parameters for an Obese Female Occupant in Toyota RAV4</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="toyotaCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="images/Toyota_2.png" class="d-block w-100" alt="Toyota Image 1"></div>
+                                    <div class="carousel-item"><img src="images/Toyota_3.png" class="d-block w-100" alt="Toyota Image 2"></div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#toyotaCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#toyotaCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <video width="100%" controls>
+                                <source src="images/Toyota_Safety.mp4" type="video/mp4">
+                            </video>
+                            <div class="mb-2">
+                                <span class="badge bg-secondary">LS-Dyna</span>
+                                <span class="badge bg-secondary">Crash Simulation</span>
+                                <span class="badge bg-secondary">Taguchi Method</span>
+                            </div>
+                            <ul class="mt-3">
+                                <li>Reduced injury risks for a short, obese female occupant by optimizing vehicle safety features</li>
+                                <li>LS-Dyna crash simulations with Taguchi matrix refined safety parameters</li>
+                                <li>P-Joint injury values reduced by 45.85% via airbag, seatbelt, and structure optimization</li>
+                                <li>Provided engineering recommendations for real-world crash safety</li>
+                            </ul>
+                            <div class="mt-3">
+                                <a href="https://github.com/yourprofile/toyota-safety" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
+                                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm me-2 disabled" tabindex="-1" aria-disabled="true">Demo</a>
+                                <!-- No Paper for this project -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-card" data-project="5">
-                <span>Project 5</span>
+            <!-- PROJECT CARD 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm project-card" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalCFRP">
+                    <img src="images/CFRP_1.png" class="card-img-top project-thumb" alt="CFRP Project Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Stress Analysis of Carbon Composite Material for Space-Based RF Components</h5>
+                        <p class="card-text">Carrier plate design using CFRP, published in Springer LNME; stress and weight significantly reduced.</p>
+                        <div class="mb-2">
+                            <span class="badge bg-secondary">SolidWorks</span>
+                            <span class="badge bg-secondary">CFRP</span>
+                            <span class="badge bg-secondary">FEA</span>
+                        </div>
+                        <button class="btn btn-outline-dark btn-sm mt-2 w-100">View Details</button>
+                    </div>
+                </div>
             </div>
-            <div class="project-card" data-project="6">
-                <span>Project 6</span>
+            <!-- Modal - CFRP -->
+            <div class="modal fade" id="modalCFRP" tabindex="-1" aria-labelledby="modalCFRPLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="modalCFRPLabel">Stress Analysis of Carbon Composite Material for Space-Based RF Components</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="cfrpCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="images/CFRP_1.png" class="d-block w-100" alt="CFRP Image 1"></div>
+                                    <div class="carousel-item"><img src="images/CFRP_2.png" class="d-block w-100" alt="CFRP Image 2"></div>
+                                    <div class="carousel-item"><img src="images/CFRP_3.png" class="d-block w-100" alt="CFRP Image 3"></div>
+                                    <div class="carousel-item"><img src="images/CFRP_4.png" class="d-block w-100" alt="CFRP Image 4"></div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#cfrpCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#cfrpCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="mb-2">
+                                <span class="badge bg-secondary">SolidWorks</span>
+                                <span class="badge bg-secondary">CFRP</span>
+                                <span class="badge bg-secondary">FEA</span>
+                            </div>
+                            <ul>
+                                <li>Designed carrier plate for microwave ICs with Kovar material (SolidWorks)</li>
+                                <li>Modal, stress, and displacement analyses via FEM</li>
+                                <li>CFRP integration reduced stress by 85%, weight by 78%</li>
+                                <li>Published in Springer’s LNME series</li>
+                            </ul>
+                            <div class="mt-3">
+                                <a href="https://github.com/yourprofile/cfrp-rf-components" target="_blank" class="btn btn-outline-dark btn-sm me-2">GitHub</a>
+                                <!-- No Demo -->
+                                <a href="https://link.springer.com/your-paper" target="_blank" class="btn btn-outline-dark btn-sm">Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Modal for project details -->
-        <div id="project-modal" class="modal" style="display:none;">
-          <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2 id="modal-title"></h2>
-            <div class="carousel-container">
-              <button class="carousel-prev">&#10094;</button>
-              <img id="carousel-img" src="" alt="Project Image">
-              <button class="carousel-next">&#10095;</button>
-            </div>
-            <p id="modal-description"></p>
-            <div id="modal-badges"></div>
-            <ul id="modal-bullets"></ul>
-            <div id="modal-links"></div>
-          </div>
+            <!-- Repeat for other projects as needed... -->
         </div>
     </div>
 
-    <!-- (Copy your existing footer/contact/etc. if needed) -->
+    <hr><br>
 
-    <!-- Project Modal JavaScript -->
-    <script>
-    // Example projectData. Replace with actual data and image paths
-    const projectData = {
-      1: {
-        title: "Project 1 Title",
-        images: ["images/project1a.jpg", "images/project1b.jpg"],
-        desc: "Description for Project 1.",
-        badges: ["Ansys", "SolidWorks", "MATLAB"],
-        bullets: ["Bullet point 1", "Bullet point 2"],
-        links: {
-          github: "#",
-          demo: "#",
-          paper: ""
-        }
-      },
-      2: {
-        title: "Project 2 Title",
-        images: ["images/project2a.jpg", "images/project2b.jpg"],
-        desc: "Description for Project 2.",
-        badges: ["MATLAB"],
-        bullets: ["Feature A", "Feature B"],
-        links: {
-          github: "#",
-          demo: "#",
-          paper: "#"
-        }
-      },
-      3: {
-        title: "Project 3 Title",
-        images: ["images/project3a.jpg"],
-        desc: "Description for Project 3.",
-        badges: ["SolidWorks"],
-        bullets: ["Highlight 1", "Highlight 2"],
-        links: {
-          github: "#",
-          demo: "",
-          paper: ""
-        }
-      },
-      4: {
-        title: "Project 4 Title",
-        images: ["images/project4a.jpg", "images/project4b.jpg", "images/project4c.jpg"],
-        desc: "Description for Project 4.",
-        badges: ["Ansys", "MATLAB"],
-        bullets: ["Point 1", "Point 2", "Point 3"],
-        links: {
-          github: "#",
-          demo: "",
-          paper: "#"
-        }
-      },
-      5: {
-        title: "Project 5 Title",
-        images: ["images/project5a.jpg"],
-        desc: "Description for Project 5.",
-        badges: ["SolidWorks", "MATLAB"],
-        bullets: ["Item 1", "Item 2"],
-        links: {
-          github: "#",
-          demo: "#",
-          paper: ""
-        }
-      },
-      6: {
-        title: "Project 6 Title",
-        images: ["images/project6a.jpg"],
-        desc: "Description for Project 6.",
-        badges: ["Ansys"],
-        bullets: ["Key 1", "Key 2"],
-        links: {
-          github: "#",
-          demo: "#",
-          paper: "#"
-        }
-      }
-    };
+    <!-- Achievements Section -->
+    <div class="sec-title">
+        <h1>Achievements</h1>
+    </div>
+    <div id="certificates">
+        <div class="certificate-box">
+            <ul>
+                <li>
+                    <p>Ranked as the top performer in the department for the 2019 batch.</p>
+                </li>
+                <li>
+                    <p>Selected as a visiting student with only two students chosen from GTU (2% acceptance rate).</p>
+                </li>
+                <li>
+                    <p>Presented and published two research papers at international conferences.</p>
+                </li>
+                <li>
+                    <p>Received spot recognition for outstanding performance on the Logistics Management Solution project at Adani Green Energy Ltd. (2023-2024)</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    document.querySelectorAll('.project-card').forEach(card => {
-      card.addEventListener('click', function() {
-        const p = projectData[this.dataset.project];
-        if (!p) return;
-        let idx = 0;
-        document.getElementById('modal-title').innerText = p.title;
-        document.getElementById('carousel-img').src = p.images[0];
-        document.getElementById('modal-description').innerText = p.desc;
-        document.getElementById('modal-badges').innerHTML = p.badges.map(b => `<span class="badge">${b}</span>`).join('');
-        document.getElementById('modal-bullets').innerHTML = p.bullets.map(b => `<li>${b}</li>`).join('');
-        let links = '';
-        if (p.links.github) links += `<a href="${p.links.github}" target="_blank">GitHub</a> `;
-        if (p.links.demo) links += `<a href="${p.links.demo}" target="_blank">Demo</a> `;
-        if (p.links.paper) links += `<a href="${p.links.paper}" target="_blank">Paper</a>`;
-        document.getElementById('modal-links').innerHTML = links;
+    <!-- Contact Section (unchanged) -->
+    <div id="contact">
+        <div class="container-fluid">
+            <h1>Get in touch</h1>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/aaryanshah4261/" target="_blank">
+                    <i class="linkedin bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:aaryansh@umich.edu" target="_blank">
+                    <i class="gmail pad-icon bi bi-envelope"></i>
+                </a>
+            </div>
+            <div class="resume-btn">
+                <a href="AaryanShah Resume.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg">Resume</button>
+            </div>
+            <h3 class="copy-right">© 2025 Aaryan</h3>
+        </div>
+    </div>
 
-        // Carousel controls
-        const imgElem = document.getElementById('carousel-img');
-        document.querySelector('.carousel-prev').onclick = function() {
-          idx = (idx - 1 + p.images.length) % p.images.length;
-          imgElem.src = p.images[idx];
-        };
-        document.querySelector('.carousel-next').onclick = function() {
-          idx = (idx + 1) % p.images.length;
-          imgElem.src = p.images[idx];
-        };
-
-        document.getElementById('project-modal').style.display = 'flex';
-      });
-    });
-
-    document.querySelector('.close-modal').onclick = function() {
-      document.getElementById('project-modal').style.display = 'none';
-    };
-    document.getElementById('project-modal').addEventListener('click', function(e) {
-      if (e.target === this) this.style.display = 'none';
-    });
-    </script>
+    <!-- Bootstrap JS (with modal & carousel support) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Optional: add your own JS for additional effects/keyboard accessibility -->
 </body>
 </html>
