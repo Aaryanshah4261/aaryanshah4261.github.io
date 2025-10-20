@@ -1,3 +1,10 @@
+/* --- Title / Hero fixes to prevent overlap --- */
+
+/* Ensure navbar is always on top */
+.navbar-custom {
+  z-index: 1000;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -179,7 +186,6 @@ h5 {
 
 .explore:hover .overlay {
     opacity: 1;
-
 }
 
 #downarrow img{
@@ -326,8 +332,7 @@ h5 {
         display: none;
     }
     
-}
-/* MOBILE And TAB*/
+}/* MOBILE And TAB*/
 @media screen and (max-width:1200px) and (min-width:801px) {
     #title-section h1 {
         font-size: 6rem;
@@ -573,4 +578,3 @@ h5 {
     justify-content: center;
     align-items: centerl
 }
-
